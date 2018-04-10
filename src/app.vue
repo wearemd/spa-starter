@@ -7,8 +7,6 @@
         li
           router-link(:to="{name: 'Aheuh'}") Aheuh
 
-    Image
-
     section
       transition(name="fade" mode="out-in")
         router-view
