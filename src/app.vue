@@ -7,6 +7,8 @@
         li
           router-link(:to="{name: 'Aheuh'}") Aheuh
 
+    p {{some_const}}
+
     section
       transition(name="fade" mode="out-in")
         router-view
@@ -18,5 +20,11 @@
 </style>
 
 <script>
-  export default {}
+  export default {
+    data() {
+      return {
+        some_const: SOME_CONST
+      }
+    }
+  }
 </script>

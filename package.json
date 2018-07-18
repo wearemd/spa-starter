@@ -4,6 +4,11 @@
   "main": "index.js",
   "author": "awea <aweaoftheworld@gmail.com>",
   "license": "ISC",
+  "configuration": {
+    "definePlugin":{
+      "SOME_CONST": "Hello there"
+    }
+  },
   "dependencies": {
     "minireset.css": "^0.0.3",
     "vue": "^2.5.16",

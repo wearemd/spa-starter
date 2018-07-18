@@ -24,3 +24,22 @@
 * `src/`
   * `index.html`: the actual `index.html` used to render the website
 * `static/`: static assets (images, fonts…)
+
+## Const per environment
+To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
+
+```json
+"configuration": {
+    "definePlugin":{
+      "SOME_CONST": "Hello there"
+    }
+  }
+```
+
+Then you can override it per environment by editing the related `webpack.[env].js` file:
+
+```js
+utils.definePlugin({
+  'SOME_CONST': 'Hello from production'
+})
+```

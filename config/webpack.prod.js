@@ -43,8 +43,9 @@ module.exports = merge(common, {
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+    utils.definePlugin({
+      'process.env.NODE_ENV': 'production',
+      'SOME_CONST': 'Hello from production'
     }),
     new webpack.optimize.UglifyJsPlugin({
       test: /\.js($|\?)/i,

@@ -58,6 +58,7 @@ module.exports = merge(common, {
           icon: path.join(__dirname, 'logo.png')
         })
       }
-    })
+    }),
+    utils.definePlugin()
   ]
 })
