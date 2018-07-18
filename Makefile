@@ -1,4 +1,4 @@
-.PHONY: serve build help
+.PHONY: serve build help deps
 .DEFAULT_GOAL := serve
 
 WEBPACK        := $(PWD)/node_modules/.bin/webpack
