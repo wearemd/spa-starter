@@ -1,5 +1,5 @@
 const merge                = require('webpack-merge');
-const common               = require('./webpack.common.js');
+const common               = require('./common.js');
 const webpack              = require('webpack');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const notifier             = require('node-notifier')

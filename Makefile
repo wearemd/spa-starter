@@ -11,13 +11,13 @@ node_modules: package.json yarn.lock
 	touch $@
 
 serve: deps ## Serve ./src with livereload on localhost:3004
-	@$(WEBPACK_SERVER) --inline --progress --config config/webpack.dev.js
+	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
 
 build: deps ## Build everything to ./dist
 	@echo "Building front-end"
 	@rm -rf dist/*
 	@yarn
-	@NODE_ENV=production $(WEBPACK) --config config/webpack.prod.js
+	@NODE_ENV=production $(WEBPACK) --config webpack/prod.js
 	@echo "Front-end built!"
 
 help: ## Print this help

@@ -36,7 +36,7 @@ To define a constant that can change based on your environment simply edit `pack
   }
 ```
 
-Then you can override it per environment by editing the related `webpack.[env].js` file:
+Then you can override it per environment by editing the related `webpack/[env].js` file:
 
 ```js
 utils.definePlugin({
