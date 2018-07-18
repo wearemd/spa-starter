@@ -4,10 +4,16 @@
 WEBPACK        := $(PWD)/node_modules/.bin/webpack
 WEBPACK_SERVER := $(PWD)/node_modules/.bin/webpack-dev-server
 
-serve: ## Serve ./src with livereload on localhost:3004
+deps: node_modules
+
+node_modules: package.json yarn.lock
+	@yarn install
+	touch $@
+
+serve: deps ## Serve ./src with livereload on localhost:3004
 	@$(WEBPACK_SERVER) --inline --progress --config config/webpack.dev.js
 
-build: ## Build everything to ./dist
+build: deps ## Build everything to ./dist
 	@echo "Building front-end"
 	@rm -rf dist/*
 	@yarn
