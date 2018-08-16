@@ -1,4 +1,5 @@
-# Template for SPA website
+# Single page application starter
+A starter template for single page applications featuring Webpack, Pug, Sass and Vue.js.
 
 ## Getting started
 
