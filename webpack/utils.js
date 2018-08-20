@@ -22,7 +22,7 @@ exports.sassResourcesLoader = function() {
     options: {
       resources: [
         path.resolve(__dirname, '../sass/utilities/mixins.sass'),
-        path.resolve(__dirname, '../sass/utilities/variables.sass')
+        path.resolve(__dirname, '../sass/utilities/initial-variables.sass')
       ]
     }
   }

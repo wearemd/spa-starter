@@ -1,16 +1,11 @@
-// Positioning
-
-// Sizes
-
-// Appearance
-
-// Responsiveness
-=from($device)
-  @media screen and (min-width: $device)
-    @content
-
-=until($device)
-  @media screen and (max-width: $device - 1px)
-    @content
-
-// Cursors
+=overlay($offset: 0)
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  @if $offset != 0
+    bottom: $offset
+    left: $offset
+    right: $offset
+    top: $offset
