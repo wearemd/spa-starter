@@ -1,4 +1,4 @@
 <template lang="pug">
-  section.page
-    h1 Index
+  section
+    h1 Home
 </template>

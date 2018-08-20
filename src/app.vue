@@ -3,9 +3,9 @@
     nav
       ul
         li
-          router-link(:to="{name: 'Home'}") Accueil
+          router-link(:to="{name: 'Home'}") Home
         li
-          router-link(:to="{name: 'Aheuh'}") Aheuh
+          router-link(:to="{name: 'Page'}") Page
 
     p {{some_const}}
 
@@ -15,7 +15,7 @@
 </template>
 
 <style lang="sass">
-  @import "minireset.css/minireset.sass"
+  // @import "minireset.css/minireset.sass"
   @import "utilities/transitions.sass"
 </style>
 
