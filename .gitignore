@@ -1,7 +1,7 @@
-# OS related
+# macOS stuff
 .DS_Store
 
-# Nodejs
+# Node.js
 node_modules/
 dist/
 npm-debug.log*
