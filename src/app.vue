@@ -21,6 +21,7 @@
 
 <script>
   export default {
+    name: 'App',
     data() {
       return {
         some_const: SOME_CONST
