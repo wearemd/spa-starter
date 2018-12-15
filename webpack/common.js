@@ -2,6 +2,7 @@ const path              = require('path')
 const webpack           = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const VueLoaderPlugin   = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: [
@@ -20,10 +21,19 @@ module.exports = {
         options: {
           presets: ['env']
         }
+      },
+      { 
+        test: /\.(vue)$/, 
+        loader: 'vue-loader'
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-plain-loader'
       }
     ]
   },
   plugins: [
+    new VueLoaderPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',

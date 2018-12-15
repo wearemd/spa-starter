@@ -7,7 +7,7 @@ const path                 = require('path')
 const utils                = require('./utils')
 
 module.exports = merge(common, {
-  devtool: 'cheap-module-eval-source-map',
+  mode: 'development',
   devServer: {
     hot: true,
     host: '0.0.0.0',
@@ -21,25 +21,19 @@ module.exports = merge(common, {
   },
   module: {
     rules: [
-      { 
-        test: /\.(vue)$/, 
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-            sass: [
-              'vue-style-loader',
-              'css-loader?url=false',
-              utils.sassLoader(),
-              utils.sassResourcesLoader()
-            ]
-          }
-        }
+      {
+        test: /\.sass$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          utils.sassLoader(),
+          utils.sassResourcesLoader()
+        ]
       }
     ]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new FriendlyErrorsPlugin({
       compilationSuccessInfo: {
