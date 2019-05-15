@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := serve
+
 WEBPACK        := $(PWD)/node_modules/.bin/webpack
 WEBPACK_SERVER := $(PWD)/node_modules/.bin/webpack-dev-server
 
@@ -8,7 +10,6 @@ node_modules: package.json yarn.lock
 	@yarn install
 	touch $@
 
-.DEFAULT_GOAL := serve
 .PHONY: serve
 serve: deps ## Serve ./src with livereload on localhost:3004
 	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
