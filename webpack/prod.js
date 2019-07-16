@@ -23,7 +23,7 @@ module.exports = merge(common, {
         use: [
           "vue-style-loader",
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          "css-loader?url=false",
           utils.sassLoader(),
           utils.sassResourcesLoader()
         ]

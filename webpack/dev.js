@@ -25,7 +25,7 @@ module.exports = merge(common, {
         test: /\.sass$/,
         use: [
           "vue-style-loader",
-          "css-loader",
+          "css-loader?url=false",
           utils.sassLoader(),
           utils.sassResourcesLoader()
         ]
