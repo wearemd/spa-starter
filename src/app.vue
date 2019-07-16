@@ -15,17 +15,17 @@
 </template>
 
 <style lang="sass">
-  // @import "minireset.css/minireset.sass"
-  @import "utilities/transitions.sass"
+// @import "minireset.css/minireset.sass"
+@import "utilities/transitions.sass"
 </style>
 
 <script>
-  export default {
-    name: 'App',
-    data() {
-      return {
-        some_const: SOME_CONST
-      }
-    }
+export default {
+  name: "App",
+  data() {
+    return {
+      some_const: SOME_CONST
+    };
   }
+};
 </script>

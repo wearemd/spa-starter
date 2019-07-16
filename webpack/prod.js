@@ -1,29 +1,29 @@
-const path                    = require('path');
-const webpack                 = require('webpack');
-const merge                   = require('webpack-merge');
-const common                  = require('./common.js');
-const MiniCssExtractPlugin    = require('mini-css-extract-plugin');
-const UglifyJsPlugin          = require('uglifyjs-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const utils                   = require('./utils');
+const path = require("path");
+const webpack = require("webpack");
+const merge = require("webpack-merge");
+const common = require("./common.js");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const utils = require("./utils");
 
 module.exports = merge(common, {
-  mode: 'production',
+  mode: "production",
   entry: {
-    app: './src/app.js'
+    app: "./src/app.js"
   },
   output: {
-    filename: 'js/[name].[chunkhash].js',
-    path: path.resolve(__dirname, '../dist') 
+    filename: "js/[name].[chunkhash].js",
+    path: path.resolve(__dirname, "../dist")
   },
   module: {
     rules: [
       {
         test: /\.(sass)$/,
         use: [
-          'vue-style-loader',
+          "vue-style-loader",
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          "css-loader",
           utils.sassLoader(),
           utils.sassResourcesLoader()
         ]
@@ -32,7 +32,7 @@ module.exports = merge(common, {
   },
   optimization: {
     splitChunks: {
-      chunks: 'all'
+      chunks: "all"
     },
     minimizer: [
       new UglifyJsPlugin({
@@ -46,11 +46,11 @@ module.exports = merge(common, {
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     utils.definePlugin({
-      'process.env.NODE_ENV': 'production',
-      'SOME_CONST': 'Hello from production'
+      "process.env.NODE_ENV": "production",
+      SOME_CONST: "Hello from production"
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/style.[contenthash].css'
+      filename: "css/style.[contenthash].css"
     })
   ]
-})
+});
