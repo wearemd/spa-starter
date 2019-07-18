@@ -4,7 +4,7 @@ A starter template for single page applications featuring Vue.js, Pug, Sass and 
 ## Getting started
 
 ### Prerequisites
-* Node.js ~> 9.0.0
+* Node.js ~> 10.16.0
 * Yarn ~> 1.16.0
 
 ### Setup
