@@ -43,3 +43,18 @@ utils.definePlugin({
   'SOME_CONST': 'Hello from production'
 })
 ```
+
+## Code formatting using Sublime Text
+For code formatting in this starter we use a Sublime Text plugin called SublimeJsPrettier which use [prettier-eslint-cli](https://github.com/prettier/prettier-eslint) following [standard](https://github.com/standard/standard) style guide. Here is our configuration for that particular plugin:
+
+```json
+{
+  "auto_format_on_save": true,
+  "auto_format_on_save_excludes": ["*.md", "*.html", "*.json"],
+  "node_path": "$HOME/.asdf/shims/node",
+  "prettier_cli_path": "./node_modules/.bin/prettier-eslint",
+  "additional_cli_args": {
+    "--eslint-config-path": "./.eslintrc.js"
+  }
+}
+```
