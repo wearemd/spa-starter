@@ -21,11 +21,11 @@
 
 <script>
 export default {
-  name: "App",
-  data() {
+  name: 'App',
+  data () {
     return {
       some_const: SOME_CONST
-    };
+    }
   }
-};
+}
 </script>
