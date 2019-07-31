@@ -29,25 +29,18 @@ make build
 Static assets (fonts and images)
 
 ### 📁 `sass/dev`
-##### `shame.sass`
-Here we put WIP CSS or dirty hacks
+`shame.sass`: Here we put WIP CSS or dirty hacks
 
 ### 📁 `sass/utilities`
-##### `initial-variables.sass`
-Variables available in all `.vue` files
-
-##### `mixins.sass`
-Mixins available in all `.vue` files
-
-##### `transitions.sass`
-Example Sass file imported in the root `app.vue` file
+- `initial-variables.sass`: Variables available in all `.vue` files
+- `mixins.sass`: Mixins available in all `.vue` files
+- `transitions.sass`: Example Sass file imported in the root `app.vue` file
 
 ### 📁 `src`
-##### `index.html`
-Used to render the website
+`index.html`: Used to render the website
 
-### `.tool-versions`
-Tells [asdf](https://github.com/asdf-vm/asdf) which version to use locally for each language
+### 📁 `./`
+`.tool-versions`: Tells [asdf](https://github.com/asdf-vm/asdf) which version to use locally for each language
 
 ## CSS reset
 We use [minireset.css](https://jgthms.com/minireset.css/), a tiny modern CSS reset.
