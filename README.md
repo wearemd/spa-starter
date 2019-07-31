@@ -25,25 +25,25 @@ make build
 ```
 
 ## Folders and files
-### `assets`
+### 📁 `assets`
 Static assets (fonts and images)
 
-### `sass/dev`
-#### `shame.sass`
+### 📁 `sass/dev`
+##### `shame.sass`
 Here we put WIP CSS or dirty hacks
 
-### `sass/utilities`
-#### `initial-variables.sass`
+### 📁 `sass/utilities`
+##### `initial-variables.sass`
 Variables available in all `.vue` files
 
-#### `mixins.sass`
+##### `mixins.sass`
 Mixins available in all `.vue` files
 
-#### `transitions.sass`
+##### `transitions.sass`
 Example Sass file imported in the root `app.vue` file
 
-### `src`
-#### `index.html`
+### 📁 `src`
+##### `index.html`
 The actual `index.html` used to render the website
 
 ### `.tool-versions`
