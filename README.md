@@ -63,15 +63,3 @@ utils.definePlugin({
   SOME_CONST: "Hello from production"
 })
 ```
-
-## Code formatting
-For code formatting we use [Js​Prettier](https://packagecontrol.io/packages/JsPrettier) Sublime Text plugin (which uses [Prettier](https://prettier.io)). Here is our configuration for that particular plugin:
-
-```json
-{
-  "auto_format_on_save": true,
-  "auto_format_on_save_excludes": ["*.md", "*.html", "*.json"],
-  "node_path": "$HOME/.asdf/shims/node",
-  "prettier_cli_path": "./node_modules/.bin/prettier"
-}
-```
