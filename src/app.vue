@@ -15,7 +15,7 @@
 </template>
 
 <style lang="sass">
-// @import "minireset.css/minireset.sass"
+@import "minireset.css/minireset.sass"
 @import "utilities/transitions.sass"
 </style>
 
