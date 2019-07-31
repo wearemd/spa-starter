@@ -26,6 +26,9 @@ A starter template for single page applications featuring Vue.js, Pug, Sass and 
   * `index.html`: The actual `index.html` used to render the website
 * `static`: Static assets (images, fonts…)
 
+## CSS reset
+We use [minireset.css](https://jgthms.com/minireset.css/), a tiny modern CSS reset.
+
 ## Const per environment
 To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
 
