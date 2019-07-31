@@ -17,6 +17,7 @@
 <style lang="sass">
 @import "minireset.css/minireset.sass"
 @import "utilities/transitions.sass"
+@import "dev/shame.sass"
 </style>
 
 <script>

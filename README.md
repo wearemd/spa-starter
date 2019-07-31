@@ -21,6 +21,7 @@ A starter template for single page applications featuring Vue.js, Pug, Sass and 
 Static assets (fonts and images)
 
 ### `sass`
+- `dev/shame.sass`: Here we put WIP CSS or dirty hacks
 - `utilities/initial-variables.sass`: Variables available in all `.vue` files
 - `utilities/mixins.sass`: Mixins available in all `.vue` files
 - `utilities/transitions.sass`: Example Sass file imported in the root `app.vue` file
