@@ -44,7 +44,7 @@ Example Sass file imported in the root `app.vue` file
 
 ### 📁 `src`
 ##### `index.html`
-The actual `index.html` used to render the website
+Used to render the website
 
 ### `.tool-versions`
 Tells [asdf](https://github.com/asdf-vm/asdf) which version to use locally for each language
