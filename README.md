@@ -46,7 +46,7 @@ utils.definePlugin({
 ```
 
 ## Code formatting using Sublime Text
-For code formatting in this starter we use a Sublime Text plugin called [SublimeJsPrettier](https://github.com/jonlabelle/SublimeJsPrettier) which use [Prettier](https://prettier.io/). Here is our configuration for that particular plugin:
+For code formatting we use [Js​Prettier](https://packagecontrol.io/packages/JsPrettier) which uses [Prettier](https://prettier.io). Here is our configuration for that particular plugin:
 
 ```json
 {
