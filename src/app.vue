@@ -7,9 +7,9 @@
         li
           router-link(:to="{name: 'Page'}") Page
 
-    p {{some_const}}
+      p {{some_const}}
 
-    section
+    section.section
       transition(name="fade" mode="out-in")
         router-view
 </template>

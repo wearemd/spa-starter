@@ -1,6 +1,7 @@
 <template lang="pug">
   section
     h1 Home
+    p This is a paragraph.
 </template>
 
 <script>
