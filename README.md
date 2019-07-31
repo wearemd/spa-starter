@@ -17,13 +17,13 @@ A starter template for single page applications featuring Vue.js, Pug, Sass and 
 `make build`: Build everything to `./dist`
 
 ## Folders
+- `assets`: Static assets (images, fonts…)
 - `sass/utilities`
   - `initial-variables.sass`: Variables available in all `.vue` files
   - `mixins.sass`: Mixins available in all `.vue` files
   - `transitions.sass`: Example Sass file imported in the root `app.vue` file
 - `src`
   - `index.html`: The actual `index.html` used to render the website
-- `static`: Static assets (images, fonts…)
 
 ## Configuration files
 - `.tool-versions`: Tells [asdf](https://github.com/asdf-vm/asdf) which version to use locally for each language

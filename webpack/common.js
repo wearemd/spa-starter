@@ -37,7 +37,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, "../static"),
+        from: path.resolve(__dirname, "../assets"),
         to: path.resolve(__dirname, "../dist"),
         ignore: [".*"]
       }
