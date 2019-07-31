@@ -41,7 +41,7 @@ Then you can override it per environment by editing the related `webpack/[env].j
 
 ```js
 utils.definePlugin({
-  'SOME_CONST': 'Hello from production'
+  SOME_CONST: "Hello from production"
 })
 ```
 
@@ -56,3 +56,5 @@ For code formatting in this starter we use a Sublime Text plugin called [Sublime
   "prettier_cli_path": "./node_modules/.bin/prettier"
 }
 ```
+
+:bulb: We also use [asdf](https://github.com/asdf-vm/asdf) to manage language versions.
