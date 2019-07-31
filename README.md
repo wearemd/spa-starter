@@ -8,13 +8,21 @@ A starter template for single page applications featuring Vue.js, Pug, Sass and 
 - Yarn - 1.16.0
 
 ### Setup
-`yarn install`
+```
+yarn install
+```
 
 ### Serve
-`make`: Serve `./src` with livereload on [localhost:3004](http://localhost:3004)
+Serve `./src` with livereload on [localhost:3004](http://localhost:3004)
+```
+make
+```
 
 ### Build
-`make build`: Build everything to `./dist`
+Build everything to `./dist`
+```
+make build
+```
 
 ## Folders and files
 ### `assets`
