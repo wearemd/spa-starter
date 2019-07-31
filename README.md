@@ -1,5 +1,5 @@
 # Single page application starter
-A starter template for single page applications featuring Vue.js, Pug, Sass and Webpack.
+**A starter template for single page applications featuring Vue.js, Pug, Sass and Webpack.**
 
 ## Getting started
 
