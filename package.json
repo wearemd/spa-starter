@@ -4,7 +4,7 @@
   "description": "A starter template for single page applications featuring Vue.js, Pug, Sass and Webpack",
   "main": "index.js",
   "author": "awea <aweaoftheworld@gmail.com>",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "configuration": {
     "definePlugin": {
       "SOME_CONST": "Hello there"
