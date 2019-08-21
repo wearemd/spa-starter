@@ -16,7 +16,7 @@
 
 ## ⌨️ Commands
 ### Serve
-Serve `./src` with livereload on [localhost:3000](http://localhost:3000) using Webpack dev environment.
+Serve `src/` with livereload on [localhost:3000](http://localhost:3000) using Webpack dev environment.
 
 ```bash
 make
@@ -25,7 +25,7 @@ make
 💡 This command will also install dependencies on first run and when `package.json` or `yarn.lock` change.
 
 ### Build
-Build everything with Webpack production environment to `./dist`.
+Build everything with Webpack production environment to `dist/`.
 
 ```bash
 make build
