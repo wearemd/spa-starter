@@ -2,9 +2,9 @@
 **A starter template for single page applications featuring Vue.js, Pug, Sass and Webpack.**
 
 ## ⚙️ Prerequisites
+- [**Make**](https://www.gnu.org/software/make/)
 - [**Node.js**](https://nodejs.org/en/)
 - [**Yarn**](https://yarnpkg.com/en/)
-- [**Make**](https://www.gnu.org/software/make/)
 
 ## 🥞 Stack
 - [**minireset.css**](https://jgthms.com/minireset.css/) 
