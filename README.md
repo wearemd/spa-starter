@@ -18,7 +18,7 @@
 ### Serve
 Serve `src/` with livereload on [localhost:3000](http://localhost:3000) using Webpack dev environment.
 
-```bash
+```
 make
 ```
 
@@ -27,14 +27,14 @@ make
 ### Build
 Build everything with Webpack production environment to `dist/`.
 
-```bash
+```
 make build
 ```
 
 ### Help
 Display a list of available commands.
 
-```bash
+```
 make help
 ```
 
