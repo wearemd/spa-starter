@@ -2,6 +2,7 @@
 **A starter template for single page applications featuring Vue.js, Pug, Sass and Webpack.**
 
 ## ⚙️ Prerequisites
+- [**asdf**](https://github.com/asdf-vm/asdf)
 - [**Make**](https://www.gnu.org/software/make/)
 - [**Node.js**](https://nodejs.org/en/)
 - [**Yarn**](https://yarnpkg.com/en/)
@@ -66,7 +67,7 @@ make help
 │   ├── dev.js                       # Development environment configuration file.
 │   ├── prod.js                      # Production environment configuration file.
 │   └── utils.js                     # JavaScript utilities for easier environment creation.
-└── .tool-versions                   # Tells [asdf](https://github.com/asdf-vm/asdf) which version to use locally for each language.
+└── .tool-versions                   # Tells asdf which version to use locally for each language.
 ``` 
 
 ## ⚙️ Constant per environment
