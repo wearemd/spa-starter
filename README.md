@@ -60,7 +60,7 @@ make help
 │   ├── router                       # Router folder.
 │   │   └── router.js                # Vue.js router configuration and initialization.
 │   ├── app.js                       # Vue.js application configuration and initialization.
-│   ├── app.vue                      # Main Vue.js container.
+│   ├── app.vue                      # Main Vue.js component.
 │   └── index.html                   # Used to render the website.
 └── webpack                          # Webpack configuration files.
 │   ├── common.js                    # Configuration shared between dev and prod environment.
