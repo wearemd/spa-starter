@@ -13,7 +13,7 @@ yarn install
 ```
 
 ### Serve
-Serve `./src` with livereload on [localhost:3004](http://localhost:3004)
+Serve `./src` with livereload on [localhost:3000](http://localhost:3000)
 ```
 make
 ```

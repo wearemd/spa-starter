@@ -11,7 +11,7 @@ module.exports = merge(common, {
   devServer: {
     hot: true,
     host: "0.0.0.0",
-    port: 3004,
+    port: 3000,
     overlay: {
       warnings: true,
       errors: true
@@ -37,7 +37,7 @@ module.exports = merge(common, {
     new webpack.NoEmitOnErrorsPlugin(),
     new FriendlyErrorsPlugin({
       compilationSuccessInfo: {
-        messages: ["Your application is running here: http://localhost:3004"]
+        messages: ["Your application is running here: http://localhost:3000"]
       },
       onErrors: (severity, errors) => {
         if (severity !== "error") return;
