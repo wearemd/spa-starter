@@ -68,7 +68,8 @@ make help
 │   ├── dev.js                       # Development environment configuration file.
 │   ├── prod.js                      # Production environment configuration file.
 │   └── utils.js                     # JavaScript utilities for easier environment creation.
-└── .tool-versions                   # Tells asdf which version to use locally for each language.
+├── .tool-versions                   # Tells asdf which version to use locally for each language.
+└── Makefile                         # Defines commands for this project. 
 ``` 
 
 ## ⚙️ Constant per environment
