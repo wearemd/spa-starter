@@ -4,8 +4,8 @@
 ## ⚙️ Prerequisites
 - [**asdf**](https://github.com/asdf-vm/asdf)
 - [**Make**](https://www.gnu.org/software/make/)
-- [**Node.js**](https://nodejs.org/en/)
-- [**Yarn**](https://yarnpkg.com/en/)
+- [**Node.js**](https://nodejs.org)
+- [**Yarn**](https://yarnpkg.com)
 
 ## 🥞 Stack
 - [**minireset.css**](https://jgthms.com/minireset.css/) 
@@ -42,35 +42,35 @@ make help
 ## 🗄️ Project structure
 ```
 .
-├── assets                           # Assets folder.
-│   ├── fonts                        # Fonts folder.
-│   └── images                       # Images folder.
-├── dist                             # Minified, optimized and compiled files. 
-├── sass                             # Sass style files.
-│   ├── dev                          # Dev style folder.
-│   │   └── shame.sass               # Here we put WIP style or dirty hacks.
-│   │                                # See: https://csswizardry.com/2013/04/shame-css/ 
-│   └── utilities                    # Utilities style folder.
-│       ├── initial-variables.sass   # Variables available in all `.vue` files.
-│       ├── mixins.sass              # Mixins available in all `.vue` files.
-│       └── transitions.sass         # Simple Vue.js transitions imported in `app.vue`.
-├── src                              # JavaScript source files (.vue, .js).
-│   ├── pages                        # Pages folder with each .vue file 
-│   │   │                            # corresponding to a route defined in router.js.
-│   │   ├── index.vue                # Home page.   
-│   │   └── page.vue                 # Simple page.
-│   ├── router                       # Router folder.
-│   │   └── router.js                # Vue.js router configuration and initialization.
-│   ├── app.js                       # Vue.js application configuration and initialization.
-│   ├── app.vue                      # Main Vue.js component.
-│   └── index.html                   # Used to render the website.
-└── webpack                          # Webpack configuration files.
-│   ├── common.js                    # Configuration shared between dev and prod environment.
-│   ├── dev.js                       # Development environment configuration file.
-│   ├── prod.js                      # Production environment configuration file.
-│   └── utils.js                     # JavaScript utilities for easier environment creation.
-├── .tool-versions                   # Tells asdf which version to use locally for each language.
-└── Makefile                         # Defines commands for this project. 
+├── assets                           # Assets folder
+│   ├── fonts                        # Fonts folder
+│   └── images                       # Images folder
+├── dist                             # Minified, optimized and compiled files
+├── sass                             # Sass style files
+│   ├── dev                          # Dev style folder
+│   │   └── shame.sass               # Here we put WIP style or dirty hacks
+│   │                                # See csswizardry.com/2013/04/shame-css/
+│   └── utilities                    # Utilities style folder
+│       ├── initial-variables.sass   # Variables available in all .vue files
+│       ├── mixins.sass              # Mixins available in all .vue files
+│       └── transitions.sass         # Simple Vue.js transitions imported in app.vue
+├── src                              # JavaScript source files (.vue, .js)
+│   ├── pages                        # Pages folder with each .vue file
+│   │   │                            # corresponding to a route defined in router.js
+│   │   ├── index.vue                # Home page
+│   │   └── page.vue                 # Simple page
+│   ├── router                       # Router folder
+│   │   └── router.js                # Vue.js router configuration and initialization
+│   ├── app.js                       # Vue.js application configuration and initialization
+│   ├── app.vue                      # Main Vue.js component
+│   └── index.html                   # Used to render the website
+└── webpack                          # Webpack configuration files
+│   ├── common.js                    # Configuration shared between dev and prod environment
+│   ├── dev.js                       # Development environment configuration file
+│   ├── prod.js                      # Production environment configuration file
+│   └── utils.js                     # JavaScript utilities for easier environment creation
+├── .tool-versions                   # Tells asdf which version to use locally for each language
+└── Makefile                         # Defines commands for this project
 ``` 
 
 ## ⚙️ Constant per environment
@@ -98,4 +98,4 @@ Now you can use this constant in every JavaScript file inside `src/` and it will
 Contributions, issues and feature requests are welcome!
 
 ## 📝 License
-This project is [GNU GPLv3](LICENSE) licensed.
+This project is [GNU GPL v3](LICENSE) licensed.
