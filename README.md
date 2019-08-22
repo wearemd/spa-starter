@@ -49,12 +49,13 @@ make help
 ├── sass                             # Sass style files.
 │   ├── dev                          # Dev style folder.
 │   │   └── shame.sass               # Here we put WIP style or dirty hacks.
-│   └── utilities                    # Utilities style folder..
+│   └── utilities                    # Utilities style folder.
 │       ├── initial-variables.sass   # Variables available in all `.vue` files.
 │       ├── mixins.sass              # Mixins available in all `.vue` files.
 │       └── transitions.sass         # Simple Vue.js transitions imported in `app.vue`.
 ├── src                              # JavaScript source files (.vue, .js).
-│   ├── pages                        # Pages folder with each .vue file corresponding to a route defined in router.js.
+│   ├── pages                        # Pages folder with each .vue file 
+│   │   │                            # corresponding to a route defined in router.js.
 │   │   ├── index.vue                # Home page.   
 │   │   └── page.vue                 # Simple page.
 │   ├── router                       # Router folder.
