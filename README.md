@@ -49,6 +49,7 @@ make help
 ├── sass                             # Sass style files.
 │   ├── dev                          # Dev style folder.
 │   │   └── shame.sass               # Here we put WIP style or dirty hacks.
+│   │                                # See: https://csswizardry.com/2013/04/shame-css/ 
 │   └── utilities                    # Utilities style folder.
 │       ├── initial-variables.sass   # Variables available in all `.vue` files.
 │       ├── mixins.sass              # Mixins available in all `.vue` files.
