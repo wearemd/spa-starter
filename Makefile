@@ -11,16 +11,16 @@ node_modules: package.json yarn.lock
 	touch $@
 
 .PHONY: serve
-serve: deps ## Serve ./src with livereload on localhost:3004
+serve: deps ## Serve src/ with livereload on localhost:3000 using Webpack dev environment
 	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
 
 .PHONY: build
-build: deps ## Build everything to ./dist
+build: deps ## Build everything with Webpack production environment to dist/
 	@echo "Building front-end"
 	@rm -rf dist/*
 	@NODE_ENV=production $(WEBPACK) --config webpack/prod.js
 	@echo "Front-end built!"
 
 .PHONY: help
-help: ## Print this help
+help: ## Display a list of available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
