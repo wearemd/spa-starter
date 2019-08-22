@@ -9,11 +9,11 @@
 
 ## 🥞 Stack
 - [**minireset.css**](https://jgthms.com/minireset.css/) 
-- [**Pug**](https://pugjs.org/api/getting-started.html)
-- [**Sass**](https://sass-lang.com/)
-- [**Vue.js**](https://vuejs.org/) 
-- [**Vue router**](https://router.vuejs.org/) 
-- [**Webpack**](https://webpack.js.org/)
+- [**Pug**](https://pugjs.org)
+- [**Sass**](https://sass-lang.com)
+- [**Vue.js**](https://vuejs.org) 
+- [**Vue router**](https://router.vuejs.org) 
+- [**Webpack**](https://webpack.js.org)
 
 ## ⌨️ Commands
 ### Serve
@@ -23,7 +23,7 @@ Serve `src/` with livereload on [localhost:3000](http://localhost:3000) using We
 make
 ```
 
-💡 This command will also install dependencies on first run and when `package.json` or `yarn.lock` change.
+💡 This command will also install dependencies on first run and when `package.json` or `yarn.lock` files are updated.
 
 ### Build
 Build everything with Webpack production environment to `dist/`.
@@ -46,24 +46,24 @@ make help
 │   ├── fonts                        # Fonts folder
 │   └── images                       # Images folder
 ├── dist                             # Minified, optimized and compiled files
-├── sass                             # Sass style files
+├── sass                             # Sass stylesheets
 │   ├── dev                          # Dev style folder
 │   │   └── shame.sass               # Here we put WIP style or dirty hacks
 │   │                                # See csswizardry.com/2013/04/shame-css/
 │   └── utilities                    # Utilities style folder
 │       ├── initial-variables.sass   # Variables available in all .vue files
 │       ├── mixins.sass              # Mixins available in all .vue files
-│       └── transitions.sass         # Simple Vue.js transitions imported in app.vue
+│       └── transitions.sass         # Vue.js transitions imported in app.vue
 ├── src                              # JavaScript source files (.vue, .js)
-│   ├── pages                        # Pages folder with each .vue file
+│   ├── pages                        # Pages folder containing each .vue file
 │   │   │                            # corresponding to a route defined in router.js
 │   │   ├── index.vue                # Home page
-│   │   └── page.vue                 # Simple page
+│   │   └── page.vue                 # Sample page
 │   ├── router                       # Router folder
 │   │   └── router.js                # Vue.js router configuration and initialization
 │   ├── app.js                       # Vue.js application configuration and initialization
 │   ├── app.vue                      # Main Vue.js component
-│   └── index.html                   # Used to render the website
+│   └── index.html                   # File used to render the website
 └── webpack                          # Webpack configuration files
 │   ├── common.js                    # Configuration shared between dev and prod environment
 │   ├── dev.js                       # Development environment configuration file
