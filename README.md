@@ -47,7 +47,7 @@ make help
 │   └── images                       # Images folder
 ├── dist                             # Minified, optimized and compiled files
 ├── sass                             # Sass stylesheets
-│   ├── dev                          # Dev style folder
+│   ├── dev                          # Development style folder
 │   │   └── shame.sass               # Here we put WIP style or dirty hacks
 │   │                                # See csswizardry.com/2013/04/shame-css/
 │   └── utilities                    # Utilities style folder
@@ -65,7 +65,7 @@ make help
 │   ├── app.vue                      # Main Vue.js component
 │   └── index.html                   # File used to render the website
 └── webpack                          # Webpack configuration files
-│   ├── common.js                    # Configuration shared between dev and prod environment
+│   ├── common.js                    # Configuration shared between development and production environments
 │   ├── dev.js                       # Development environment configuration file
 │   ├── prod.js                      # Production environment configuration file
 │   └── utils.js                     # JavaScript utilities for easier environment creation
