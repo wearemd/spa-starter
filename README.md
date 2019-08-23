@@ -65,7 +65,7 @@ make help
 │   ├── app.vue                      # Main Vue.js component
 │   └── index.html                   # File used to render the website
 └── webpack                          # Webpack configuration files
-│   ├── common.js                    # Configuration shared between development and production environments
+│   ├── common.js                    # Configuration shared between dev and prod environments
 │   ├── dev.js                       # Development environment configuration file
 │   ├── prod.js                      # Production environment configuration file
 │   └── utils.js                     # JavaScript utilities for easier environment creation
