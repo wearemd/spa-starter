@@ -1,5 +1,5 @@
-# Single page application starter
-<big style="font-size: 1.5em;">A starter template for single page applications featuring Vue.js, Pug, Sass and Webpack.</big>
+<h1 align="center">Single page application starter</h1>
+<p align="center"><b>A starter template for single page applications featuring Vue.js, Pug, Sass and Webpack.</b></p>
 
 ## ⚙️ Prerequisites
 - [**asdf**](https://github.com/asdf-vm/asdf)
