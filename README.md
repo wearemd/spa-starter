@@ -13,7 +13,7 @@
 - [**Pug**](https://pugjs.org)
 - [**Sass**](https://sass-lang.com)
 - [**Vue.js**](https://vuejs.org) 
-- [**Vue router**](https://router.vuejs.org) 
+- [**Vue Router**](https://router.vuejs.org) 
 - [**Webpack**](https://webpack.js.org)
 
 ## ⌨️ Commands
