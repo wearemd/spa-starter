@@ -80,8 +80,7 @@ make help
 ├── .babelrc                         # Tells Babel which presets and plugins to use 
 ├── .tool-versions                   # Tells asdf which version to use locally for each language
 ├── Makefile                         # Defines commands for this project
-└── package.json                     # Defines libraries and dependencies 
-                                     # for JS packages, used by Yarn
+└── package.json                     # Defines libraries and dependencies for JS packages, used by Yarn
 ``` 
 
 ## ⚙️ Constant per environment
