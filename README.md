@@ -48,7 +48,9 @@ make help
 ├── assets                           # Assets folder
 │   ├── fonts                        # Fonts folder
 │   └── images                       # Images folder
+│
 ├── dist                             # Minified, optimized and compiled files
+│
 ├── sass                             # Sass stylesheets
 │   ├── dev                          # Development style folder
 │   │   └── shame.sass               # Here we put WIP style or dirty hacks
@@ -57,6 +59,7 @@ make help
 │       ├── initial-variables.sass   # Variables available in all .vue and .sass files
 │       ├── mixins.sass              # Mixins available in all .vue and .sass files
 │       └── transitions.sass         # Vue.js transitions imported in app.vue
+│
 ├── src                              # JavaScript source files (.vue, .js)
 │   ├── pages                        # Pages folder containing each .vue file
 │   │   │                            # corresponding to a route defined in router/index.js
@@ -67,11 +70,13 @@ make help
 │   ├── app.js                       # Vue.js application configuration and initialization
 │   ├── app.vue                      # Main Vue.js component
 │   └── index.html                   # File used to render the website
+│
 └── webpack                          # Webpack configuration files
 │   ├── common.js                    # Configuration shared between dev and prod environments
 │   ├── dev.js                       # Development environment configuration file
 │   ├── prod.js                      # Production environment configuration file
 │   └── utils.js                     # JavaScript utilities for easier environment creation
+│
 ├── .babelrc                         # Tells Babel which presets and plugins to use 
 ├── .tool-versions                   # Tells asdf which version to use locally for each language
 ├── Makefile                         # Defines commands for this project
