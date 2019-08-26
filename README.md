@@ -51,16 +51,16 @@ make help
 │   │   └── shame.sass               # Here we put WIP style or dirty hacks
 │   │                                # See csswizardry.com/2013/04/shame-css/
 │   └── utilities                    # Utilities style folder
-│       ├── initial-variables.sass   # Variables available in all .vue files
-│       ├── mixins.sass              # Mixins available in all .vue files
+│       ├── initial-variables.sass   # Variables available in all .vue and .sass files
+│       ├── mixins.sass              # Mixins available in all .vue and .sass files
 │       └── transitions.sass         # Vue.js transitions imported in app.vue
 ├── src                              # JavaScript source files (.vue, .js)
 │   ├── pages                        # Pages folder containing each .vue file
-│   │   │                            # corresponding to a route defined in router.js
+│   │   │                            # corresponding to a route defined in router/index.js
 │   │   ├── index.vue                # Home page
 │   │   └── page.vue                 # Sample page
 │   ├── router                       # Router folder
-│   │   └── router.js                # Vue.js router configuration and initialization
+│   │   └── index.js                 # Vue.js router configuration and initialization
 │   ├── app.js                       # Vue.js application configuration and initialization
 │   ├── app.vue                      # Main Vue.js component
 │   └── index.html                   # File used to render the website
