@@ -8,6 +8,7 @@
 - [**Yarn**](https://yarnpkg.com)
 
 ## 🥞 Stack
+- [**Babel**](https://babeljs.io)
 - [**minireset.css**](https://jgthms.com/minireset.css/) 
 - [**Pug**](https://pugjs.org)
 - [**Sass**](https://sass-lang.com)
@@ -69,8 +70,11 @@ make help
 │   ├── dev.js                       # Development environment configuration file
 │   ├── prod.js                      # Production environment configuration file
 │   └── utils.js                     # JavaScript utilities for easier environment creation
+├── .babelrc                         # Tells Babel which presets and plugins to use 
 ├── .tool-versions                   # Tells asdf which version to use locally for each language
-└── Makefile                         # Defines commands for this project
+├── Makefile                         # Defines commands for this project
+└── package.json                     # Defines libraries and dependencies 
+                                     # for JS packages, used by Yarn
 ``` 
 
 ## ⚙️ Constant per environment
