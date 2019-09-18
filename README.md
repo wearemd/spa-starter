@@ -108,4 +108,4 @@ Now you can use this constant in every JavaScript file inside `src/` and it will
 Contributions, issues and feature requests are welcome!
 
 ## 📝 License
-This project is [GNU GPL v3](LICENSE) licensed.
+Single page application starter is licensed under the [GNU General Public License v3.0](LICENSE).
