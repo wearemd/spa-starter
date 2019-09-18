@@ -8,7 +8,7 @@ deps: node_modules
 
 node_modules: package.json yarn.lock
 	@yarn install
-	touch $@
+	@touch $@
 
 .PHONY: serve
 serve: deps ## Serve src/ with livereload on localhost:3000 using Webpack dev environment
