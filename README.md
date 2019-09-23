@@ -105,7 +105,7 @@ utils.definePlugin({
 Now you can use this constant in every JavaScript file inside `src/` and it will changed depending on your Webpack environment.
 
 ## 🚀 Cache busting
-Cache busting in this starter is done by automatically appending a hash to each asset filename. You can read more about it in the [Webpack documentation](https://webpack.js.org/guides/caching/).
+Cache busting in this starter is done by automatically appending a hash to each asset filename. You can read more about caching in [Webpack documentation](https://webpack.js.org/guides/caching/).
 
 ## 🤜🤛 Contributing
 Contributions, issues and feature requests are welcome!
