@@ -108,5 +108,5 @@ Cache busting in this starter is done by automatically appending a hash to each 
 ## 🤜🤛 Contributing
 Contributions, issues and feature requests are welcome!
 
-## 📝 License
+## 📄 License
 Single page application starter is licensed under the [GNU General Public License v3.0](LICENSE).
