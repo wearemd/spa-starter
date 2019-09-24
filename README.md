@@ -33,8 +33,6 @@ Build everything with Webpack production environment to `dist/`.
 make build
 ```
 
-💡 In production environment JS and CSS filenames are generated using a hash of their content to ensure cache busting.
-
 ### Help
 Display a list of available commands.
 
