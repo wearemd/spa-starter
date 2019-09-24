@@ -73,7 +73,7 @@ make help
 │   ├── common.js                    # Configuration shared between dev and prod environments
 │   ├── dev.js                       # Development environment configuration file
 │   ├── prod.js                      # Production environment configuration file
-│   └── utils.js                     # JavaScript utilities for easier environment creation
+│   └── utils.js                     # JavaScript utilities to create a new environment easily
 │
 ├── .babelrc                         # Tells Babel which presets and plugins to use 
 ├── .tool-versions                   # Tells asdf which version to use locally for each language
