@@ -81,7 +81,7 @@ make help
 ├── .tool-versions                   # Tells asdf which version to use locally for each language
 ├── Makefile                         # Defines commands for this project
 └── package.json                     # Sets libraries and dependencies for JS packages, used by Yarn
-``` 
+```
 
 ## ⚙️ Constant per environment
 To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
@@ -104,8 +104,8 @@ utils.definePlugin({
 
 Now you can use this constant in every JavaScript file inside `src/` and it will changed depending on your Webpack environment.
 
-## 🚀 Cache busting
-Cache busting in this starter is done by automatically appending a hash to each asset filename. You can read more about caching in [Webpack documentation](https://webpack.js.org/guides/caching/).
+## 🍱 Cache busting
+Our strategy for cache busting is to automatically append a `.[generated-hash]` to each asset query. You can read more about caching in [Webpack documentation](https://webpack.js.org/guides/caching/).
 
 ## 🤜🤛 Contributing
 Contributions, issues and feature requests are welcome!
