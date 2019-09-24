@@ -105,7 +105,7 @@ utils.definePlugin({
 Now you can use this constant in every JavaScript file inside `src/` and it will changed depending on your Webpack environment.
 
 ## 🍱 Cache busting
-Our strategy for cache busting is to automatically append a `.[generated-hash]` to each asset query. You can read more about caching in [Webpack documentation](https://webpack.js.org/guides/caching/).
+Our strategy for cache busting is to automatically append a `.[generated-hash]` to each asset file name. You can read more about caching in [Webpack documentation](https://webpack.js.org/guides/caching/).
 
 ## 🤜🤛 Contributing
 Contributions, issues and feature requests are welcome!
