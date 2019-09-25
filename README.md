@@ -9,7 +9,7 @@
 
 ## 🥞 Stack
 - [**Babel**](https://babeljs.io)
-- [**minireset.css**](https://jgthms.com/minireset.css/) 
+- [**minireset.css**](https://jgthms.com/minireset.css/)
 - [**Pug**](https://pugjs.org)
 - [**Sass**](https://sass-lang.com)
 - [**Vue.js**](https://vuejs.org) 
