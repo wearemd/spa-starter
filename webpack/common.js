@@ -8,7 +8,7 @@ module.exports = {
   entry: ["./src/app.js"],
   output: {
     filename: "js/app.js",
-    path: path.resolve(__dirname, "../dist")
+    path: path.resolve(__dirname, "../site")
   },
   module: {
     rules: [
@@ -38,7 +38,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, "../assets"),
-        to: path.resolve(__dirname, "../dist"),
+        to: path.resolve(__dirname, "../site"),
         ignore: [".*"]
       }
     ])

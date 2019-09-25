@@ -14,9 +14,9 @@ serve: deps ## Serve src/ with livereload on localhost:3000 using Webpack dev en
 	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
 
 .PHONY: build
-build: deps ## Build everything with Webpack production environment to dist/
+build: deps ## Build everything with Webpack production environment to site/
 	@echo "Building front-end"
-	@rm -rf dist/*
+	@rm -rf site/*
 	@NODE_ENV=production $(WEBPACK) --config webpack/prod.js
 	@echo "Front-end built!"
 

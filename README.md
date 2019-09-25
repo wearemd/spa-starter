@@ -27,7 +27,7 @@ make
 ```
 
 ### Build
-Build everything with Webpack production environment to `dist/`.
+Build everything with Webpack production environment to `site/`.
 
 💡 This command will also **install dependencies** on first run and when `package.json` or `yarn.lock` files are updated.
 
@@ -49,7 +49,7 @@ make help
 │   ├── fonts                        # Fonts folder
 │   └── images                       # Images folder
 │
-├── dist                             # Minified, optimized and compiled files
+├── site                             # Minified, optimized and compiled files
 │
 ├── sass                             # Sass stylesheets
 │   ├── dev                          # Development style folder
