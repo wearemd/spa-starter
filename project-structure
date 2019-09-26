@@ -4,6 +4,8 @@
 │   │   └── .gitkeep
 │   └── images
 │       └── .gitkeep
+│
+│
 ├── sass
 │   ├── dev
 │   │   └── shame.sass
@@ -11,6 +13,8 @@
 │       ├── initial-variables.sass
 │       ├── mixins.sass
 │       └── transitions.sass
+│
+│
 ├── src
 │   ├── pages
 │   │   ├── index.vue
@@ -20,11 +24,15 @@
 │   ├── app.js
 │   ├── app.vue
 │   └── index.html
+│
+│
 ├── webpack
 │   ├── common.js
 │   ├── dev.js
 │   ├── prod.js
 │   └── utils.js
+│
+│
 ├── .babelrc
 ├── .gitignore
 ├── .tool-versions
