@@ -20,6 +20,7 @@
 ### Serve
 ```bash
 # Serve site at localhost:3000 with hot reloading
+
 make
 ```
 
@@ -28,6 +29,7 @@ make
 ### Build
 ```bash
 # Build site for production use
+
 make build
 ```
 
@@ -36,6 +38,7 @@ make build
 ### Help
 ```bash
 # List available commands
+
 make help
 ```
 
