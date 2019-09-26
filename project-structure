@@ -1,12 +1,12 @@
 .
-├── assets                         # 
+├── assets                         # Assets
 │   ├── fonts                      # 
 │   │   └── .gitkeep               # 
 │   └── images                     # 
 │       └── unicorn.jpg            # 
 │
 │
-├── sass                           # 
+├── sass                           # Sass style
 │   ├── dev                        # 
 │   │   └── shame.sass             # 
 │   └── utilities                  # 
@@ -15,7 +15,7 @@
 │       └── transitions.sass       # 
 │
 │
-├── src                            # 
+├── src                            # JavaScript source files (.js, .vue)
 │   ├── pages                      # 
 │   │   ├── index.vue              # 
 │   │   └── page.vue               # 
@@ -26,18 +26,18 @@
 │   └── index.html                 # 
 │
 │
-├── webpack                        # 
+├── webpack                        # Webpack configuration
 │   ├── common.js                  # 
 │   ├── dev.js                     # 
 │   ├── prod.js                    # 
 │   └── utils.js                   # 
 │
 │
-├── .babelrc                       # 
-├── .gitignore                     # 
-├── .tool-versions                 # 
-├── LICENSE                        # 
-├── Makefile                       # 
-├── package.json                   # 
-├── README.md                      # 
-└── yarn.lock                      # 
+├── .babelrc                       # Presets and plugins to use, used by Babel
+├── .gitignore                     # 🦄
+├── .tool-versions                 # Which version to use locally for each language, used by asdf
+├── LICENSE                        # License
+├── Makefile                       # Commands for this project
+├── package.json                   # Libraries and dependencies for JavaScript packages, used by Yarn
+├── README.md                      # Project documentation
+└── yarn.lock                      # 🦄
