@@ -1,43 +1,43 @@
 .
-├── assets
-│   ├── fonts
-│   │   └── .gitkeep
-│   └── images
-│       └── unicorn.jpg
+├── assets                         # 
+│   ├── fonts                      # 
+│   │   └── .gitkeep               # 
+│   └── images                     # 
+│       └── unicorn.jpg            # 
 │
 │
-├── sass
-│   ├── dev
-│   │   └── shame.sass
-│   └── utilities
-│       ├── initial-variables.sass
-│       ├── mixins.sass
-│       └── transitions.sass
+├── sass                           # 
+│   ├── dev                        # 
+│   │   └── shame.sass             # 
+│   └── utilities                  # 
+│       ├── initial-variables.sass # 
+│       ├── mixins.sass            # 
+│       └── transitions.sass       # 
 │
 │
-├── src
-│   ├── pages
-│   │   ├── index.vue
-│   │   └── page.vue
-│   ├── router
-│   │   └── index.js
-│   ├── app.js
-│   ├── app.vue
-│   └── index.html
+├── src                            # 
+│   ├── pages                      # 
+│   │   ├── index.vue              # 
+│   │   └── page.vue               # 
+│   ├── router                     # 
+│   │   └── index.js               # 
+│   ├── app.js                     # 
+│   ├── app.vue                    # 
+│   └── index.html                 # 
 │
 │
-├── webpack
-│   ├── common.js
-│   ├── dev.js
-│   ├── prod.js
-│   └── utils.js
+├── webpack                        # 
+│   ├── common.js                  # 
+│   ├── dev.js                     # 
+│   ├── prod.js                    # 
+│   └── utils.js                   # 
 │
 │
-├── .babelrc
-├── .gitignore
-├── .tool-versions
-├── LICENSE
-├── Makefile
-├── package.json
-├── README.md
-└── yarn.lock
+├── .babelrc                       # 
+├── .gitignore                     # 
+├── .tool-versions                 # 
+├── LICENSE                        # 
+├── Makefile                       # 
+├── package.json                   # 
+├── README.md                      # 
+└── yarn.lock                      # 
