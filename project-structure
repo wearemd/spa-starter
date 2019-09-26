@@ -30,6 +30,6 @@
 ├── .tool-versions
 ├── LICENSE
 ├── Makefile
-├── README.md
 ├── package.json
+├── README.md
 └── yarn.lock
