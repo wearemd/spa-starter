@@ -18,7 +18,7 @@
 
 ## ⌨️ Commands
 ### Serve
-```bash
+```makefile
 # Serve site at localhost:3000 with hot reloading
 
 make
@@ -27,7 +27,7 @@ make
 💡 This command will also **install dependencies** on first run and when `package.json` or `yarn.lock` files are updated.
 
 ### Build
-```bash
+```makefile
 # Build site for production use
 
 make build
@@ -36,7 +36,7 @@ make build
 💡 This command will also **install dependencies** on first run and when `package.json` or `yarn.lock` files are updated.
 
 ### Help
-```bash
+```makefile
 # List available commands
 
 make help
