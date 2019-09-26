@@ -10,16 +10,16 @@ node_modules: package.json yarn.lock
 
 .DEFAULT_GOAL := serve
 .PHONY: serve
-serve: deps ## Serve src/ with livereload on localhost:3000 using Webpack dev environment
+serve: deps ## Serve site at localhost:3000 with hot reloading
 	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
 
 .PHONY: build
-build: deps ## Build everything with Webpack production environment to site/
+build: deps ## Build site for production use
 	@echo "Building front-end"
 	@rm -rf site/*
 	@NODE_ENV=production $(WEBPACK) --config webpack/prod.js
 	@echo "Front-end built!"
 
 .PHONY: help
-help: ## Display a list of available commands
+help: ## List available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
