@@ -1,26 +1,26 @@
 .
 ├── assets                         # Assets
 │   ├── fonts                      # Fonts
-│   │   └── .gitkeep               # 
+│   │   └── .gitkeep               # 🦄
 │   └── images                     # Images
-│       └── unicorn.jpg            # 
+│       └── unicorn.jpg            # Sample image
 │
 │
 ├── sass                           # Sass style
 │   ├── dev                        # WIP style for development
-│   │   └── shame.sass             # 
+│   │   └── shame.sass             # WIP style or dirty hacks
 │   └── utilities                  # Utilities
-│       ├── initial-variables.sass # 
-│       ├── mixins.sass            # 
-│       └── transitions.sass       # 
+│       ├── initial-variables.sass # Variables available in .vue and .sass files
+│       ├── mixins.sass            # Mixins available in .vue and .sass files
+│       └── transitions.sass       # Vue.js transitions imported in app.vue
 │
 │
 ├── src                            # JavaScript source files (.vue, .js)
 │   ├── pages                      # Pages
-│   │   ├── index.vue              # 
-│   │   └── page.vue               # 
+│   │   ├── index.vue              # Home page
+│   │   └── page.vue               # Sample page
 │   ├── router                     # Router
-│   │   └── index.js               # 
+│   │   └── index.js               # Vue.js router configuration and initialization
 │   ├── app.js                     # Vue.js application configuration and initialization
 │   ├── app.vue                    # Main Vue.js component
 │   └── index.html                 # HTML index used to render the website
