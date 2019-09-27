@@ -15,7 +15,7 @@
 │       └── transitions.sass       # Vue.js transitions imported in app.vue
 │
 │
-├── src                            # JavaScript source files (.vue, .js)
+├── src                            # Vue.js/JavaScript source files
 │   ├── pages                      # Pages
 │   │   ├── index.vue              # Home page
 │   │   └── page.vue               # Sample page
