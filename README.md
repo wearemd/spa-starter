@@ -43,7 +43,7 @@ make help
 ```
 
 ## 🗄️ Project structure
-See [WIP project structure](project-structure)
+
 
 ## ⚙️ Constant per environment
 To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
