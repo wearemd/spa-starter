@@ -10,8 +10,8 @@
 │   ├── dev                        # WIP style for development
 │   │   └── shame.sass             # WIP style or dirty hacks
 │   └── utilities                  # Utilities
-│       ├── initial-variables.sass # Variables available in .vue and .sass files
-│       ├── mixins.sass            # Mixins available in .vue and .sass files
+│       ├── initial-variables.sass # Variables available in all .vue and .sass files
+│       ├── mixins.sass            # Mixins available in all .vue and .sass files
 │       └── transitions.sass       # Vue.js transitions imported in app.vue
 │
 │
