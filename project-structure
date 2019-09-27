@@ -1,8 +1,8 @@
 .
 ├── assets                         # Assets
-│   ├── fonts                      # Fonts
+│   ├── fonts                      # Font assets
 │   │   └── .gitkeep               # 🦄
-│   └── images                     # Images
+│   └── images                     # Image assets
 │       └── unicorn.jpg            # Sample image
 │
 │
