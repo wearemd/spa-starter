@@ -43,45 +43,7 @@ make help
 ```
 
 ## 🗄️ Project structure
-```
-.
-├── assets                           # Assets folder
-│   ├── fonts                        # Fonts folder
-│   └── images                       # Images folder
-│
-├── site                             # Minified, optimized and compiled files
-│
-├── sass                             # Sass stylesheets
-│   ├── dev                          # Development style folder
-│   │   └── shame.sass               # Here we put WIP style or dirty hacks
-│   │                                # See csswizardry.com/2013/04/shame-css/
-│   └── utilities                    # Utilities style folder
-│       ├── initial-variables.sass   # Variables available in all .vue and .sass files
-│       ├── mixins.sass              # Mixins available in all .vue and .sass files
-│       └── transitions.sass         # Vue.js transitions imported in app.vue
-│
-├── src                              # JavaScript source files (.vue, .js)
-│   ├── pages                        # Pages folder containing each .vue file
-│   │   │                            # corresponding to a route defined in router/index.js
-│   │   ├── index.vue                # Home page
-│   │   └── page.vue                 # Sample page
-│   ├── router                       # Router folder
-│   │   └── index.js                 # Vue.js router configuration and initialization
-│   ├── app.js                       # Vue.js application configuration and initialization
-│   ├── app.vue                      # Main Vue.js component
-│   └── index.html                   # File used to render the website
-│
-└── webpack                          # Webpack configuration files
-│   ├── common.js                    # Configuration shared between dev and prod environments
-│   ├── dev.js                       # Development environment configuration file
-│   ├── prod.js                      # Production environment configuration file
-│   └── utils.js                     # JavaScript utilities to create a new environment easily
-│
-├── .babelrc                         # Tells Babel which presets and plugins to use 
-├── .tool-versions                   # Tells asdf which version to use locally for each language
-├── Makefile                         # Defines commands for this project
-└── package.json                     # Sets libraries and dependencies for JS packages, used by Yarn
-```
+See [WIP project structure](project-structure)
 
 ## ⚙️ Constant per environment
 To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
