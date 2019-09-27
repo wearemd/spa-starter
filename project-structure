@@ -2,6 +2,7 @@
 ├── assets                         # Assets
 │   ├── fonts                      # Font assets
 │   │   └── .gitkeep               # 🦄
+│   │
 │   └── images                     # Image assets
 │       └── unicorn.jpg            # Sample image
 │
@@ -9,6 +10,7 @@
 ├── sass                           # Sass style
 │   ├── dev                        # WIP style for development
 │   │   └── shame.sass             # WIP style or dirty hacks
+│   │
 │   └── utilities                  # Utilities
 │       ├── initial-variables.sass # Variables available in all .vue and .sass files
 │       ├── mixins.sass            # Mixins available in all .vue and .sass files
@@ -19,8 +21,10 @@
 │   ├── pages                      # Pages
 │   │   ├── index.vue              # Home page
 │   │   └── page.vue               # Sample page
+│   │
 │   ├── router                     # Router
 │   │   └── index.js               # Vue.js router configuration and initialization
+│   │
 │   ├── app.js                     # Vue.js application configuration and initialization
 │   ├── app.vue                    # Main Vue.js component
 │   └── index.html                 # HTML index used to render the website
