@@ -1,36 +1,36 @@
 .
 ├── assets                         # Assets
-│   ├── fonts                      # 
+│   ├── fonts                      # Fonts
 │   │   └── .gitkeep               # 
-│   └── images                     # 
+│   └── images                     # Images
 │       └── unicorn.jpg            # 
 │
 │
 ├── sass                           # Sass style
-│   ├── dev                        # 
+│   ├── dev                        # WIP style for development
 │   │   └── shame.sass             # 
-│   └── utilities                  # 
+│   └── utilities                  # Utilities
 │       ├── initial-variables.sass # 
 │       ├── mixins.sass            # 
 │       └── transitions.sass       # 
 │
 │
 ├── src                            # JavaScript source files (.vue, .js)
-│   ├── pages                      # 
+│   ├── pages                      # Pages
 │   │   ├── index.vue              # 
 │   │   └── page.vue               # 
-│   ├── router                     # 
+│   ├── router                     # Router
 │   │   └── index.js               # 
-│   ├── app.js                     # 
-│   ├── app.vue                    # 
-│   └── index.html                 # 
+│   ├── app.js                     # Vue.js application configuration and initialization
+│   ├── app.vue                    # Main Vue.js component
+│   └── index.html                 # HTML index used to render the website
 │
 │
 ├── webpack                        # Webpack configuration
-│   ├── common.js                  # 
-│   ├── dev.js                     # 
-│   ├── prod.js                    # 
-│   └── utils.js                   # 
+│   ├── common.js                  # Shared between development and production environments
+│   ├── dev.js                     # Development environment
+│   ├── prod.js                    # Production environment
+│   └── utils.js                   # JavaScript utilities to create a new environment easily
 │
 │
 ├── .babelrc                       # Presets and plugins to use, used by Babel
