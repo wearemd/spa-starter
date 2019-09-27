@@ -26,11 +26,11 @@
 │   └── index.html                 # HTML index used to render the website
 │
 │
-├── webpack                        # Webpack configuration
+├── webpack                        # Webpack configuration per environment and utilities
 │   ├── common.js                  # Shared between development and production environments
 │   ├── dev.js                     # Development environment
 │   ├── prod.js                    # Production environment
-│   └── utils.js                   # JavaScript utilities to create a new environment easily
+│   └── utils.js                   # Utilities to create a new environment easily
 │
 │
 ├── .babelrc                       # Presets and plugins to use, used by Babel
