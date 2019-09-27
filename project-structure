@@ -15,7 +15,7 @@
 │       └── transitions.sass       # 
 │
 │
-├── src                            # JavaScript source files (.js, .vue)
+├── src                            # JavaScript source files (.vue, .js)
 │   ├── pages                      # 
 │   │   ├── index.vue              # 
 │   │   └── page.vue               # 
