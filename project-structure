@@ -1,7 +1,7 @@
 .
 ├── assets                         # Assets
 │   ├── fonts                      # Font assets
-│   │   └── .gitkeep               # 🦄
+│   │   └── .gitkeep               # Tracking an empty directory within Git
 │   │
 │   └── images                     # Image assets
 │       └── unicorn.jpg            # Sample image
@@ -38,10 +38,10 @@
 │
 │
 ├── .babelrc                       # Presets and plugins to use, used by Babel
-├── .gitignore                     # 🦄
+├── .gitignore                     # Files and folders ignored by Git
 ├── .tool-versions                 # Which version to use locally for each language, used by asdf
 ├── LICENSE                        # License
 ├── Makefile                       # Commands for this project
-├── package.json                   # Libraries and dependencies for JavaScript packages, used by Yarn
+├── package.json                   # JavaScript dependencies, used by Yarn
 ├── README.md                      # Project documentation
-└── yarn.lock                      # 🦄
+└── yarn.lock                      # Tracking exact versions for JavaScript dependencies, used by Yarn
