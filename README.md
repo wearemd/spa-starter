@@ -43,7 +43,55 @@ make help
 ```
 
 ## 🗄️ Project structure
-
+```
+.
+├── assets                         # Assets
+│   ├── fonts                      # Font assets
+│   │   └── .gitkeep               # Tracking an empty directory within Git
+│   │
+│   └── images                     # Image assets
+│       └── unicorn.jpg            # Sample image
+│
+│
+├── sass                           # Sass style
+│   ├── dev                        # WIP style for development
+│   │   └── shame.sass             # WIP style or dirty hacks
+│   │
+│   └── utilities                  # Utilities
+│       ├── initial-variables.sass # Variables available in all .vue and .sass files
+│       ├── mixins.sass            # Mixins available in all .vue and .sass files
+│       └── transitions.sass       # Vue.js transitions imported in app.vue
+│
+│
+├── src                            # Vue.js/JavaScript source files
+│   ├── pages                      # Pages
+│   │   ├── index.vue              # Home page
+│   │   └── page.vue               # Sample page
+│   │
+│   ├── router                     # Router
+│   │   └── index.js               # Vue.js router configuration and initialization
+│   │
+│   ├── app.js                     # Vue.js application configuration and initialization
+│   ├── app.vue                    # Main Vue.js component
+│   └── index.html                 # HTML index used to render the website
+│
+│
+├── webpack                        # Webpack configuration per environment and utilities
+│   ├── common.js                  # Shared between development and production environments
+│   ├── dev.js                     # Development environment
+│   ├── prod.js                    # Production environment
+│   └── utils.js                   # Utilities to create a new environment easily
+│
+│
+├── .babelrc                       # Presets and plugins to use, used by Babel
+├── .gitignore                     # Files and folders ignored by Git
+├── .tool-versions                 # Which version to use locally for each language, used by asdf
+├── LICENSE                        # License
+├── Makefile                       # Commands for this project
+├── package.json                   # JavaScript dependencies, used by Yarn
+├── README.md                      # Project documentation
+└── yarn.lock                      # Tracking exact versions for JavaScript dependencies, used by Yarn
+```
 
 ## ⚙️ Constant per environment
 To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
