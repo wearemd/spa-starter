@@ -45,7 +45,7 @@ make help
 ## 🗄️ Project structure
 ```
 .
-├── assets                         # Assets
+├── assets                         # ASSETS
 │   ├── fonts                      # Font assets
 │   │   └── .gitkeep               # Tracking an empty directory within Git
 │   │
@@ -53,7 +53,7 @@ make help
 │       └── unicorn.jpg            # Sample image
 │
 │
-├── sass                           # Sass style
+├── sass                           # SASS STYLE
 │   ├── dev                        # WIP style for development
 │   │   └── shame.sass             # WIP style or dirty hacks
 │   │
@@ -63,7 +63,7 @@ make help
 │       └── transitions.sass       # Vue.js transitions imported in app.vue
 │
 │
-├── src                            # Vue.js/JavaScript source files
+├── src                            # VUE.JS/JAVASCRIPT SOURCE FILES
 │   ├── pages                      # Pages
 │   │   ├── index.vue              # Home page
 │   │   └── page.vue               # Sample page
@@ -76,7 +76,7 @@ make help
 │   └── index.html                 # HTML index used to render the website
 │
 │
-├── webpack                        # Webpack configuration per environment and utilities
+├── webpack                        # WEBPACK CONFIGURATION PER ENVIRONMENT AND UTILITIES
 │   ├── common.js                  # Shared between development and production environments
 │   ├── dev.js                     # Development environment
 │   ├── prod.js                    # Production environment
