@@ -16,12 +16,26 @@
 
 - - -
 
+## 📝 Table of contents
+- [**Prerequisites**](#prerequisites)
+- [**Commands**](#commands)
+- [**Project structure**](#project-structure)
+- [**Constant per environment**](#constant-per-environment)
+- [**Cache busting**](#cache-busting)
+- [**Authors**](#authors)
+- [**Contributing**](#contributing)
+- [**License**](#license)
+
+- - -
+
+<a name="prerequisites"></a>
 ## ⚙️ Prerequisites
 - [**asdf**](https://github.com/asdf-vm/asdf)
 - [**Make**](https://www.gnu.org/software/make/)
 - [**Node.js**](https://nodejs.org)
 - [**Yarn**](https://yarnpkg.com)
 
+<a name="commands"></a>
 ## ⌨️ Commands
 ### Serve
 ```makefile
@@ -48,6 +62,7 @@ make build
 make help
 ```
 
+<a name="project-structure"></a>
 ## 🗄️ Project structure
 ```
 .
@@ -100,6 +115,7 @@ make help
 └── yarn.lock                      # Tracking exact versions for JavaScript dependencies, used by Yarn
 ```
 
+<a name="constant-per-environment"></a>
 ## ⚙️ Constant per environment
 To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
 
@@ -121,11 +137,17 @@ utils.definePlugin({
 
 Now you can use this constant in every JavaScript file inside `src/` and it will changed depending on your Webpack environment.
 
+<a name="cache-busting"></a>
 ## 🍱 Cache busting
 Our strategy for cache busting is to automatically append a `.[generated-hash]` to each asset file name. You can read more about caching in [Webpack documentation](https://webpack.js.org/guides/caching/).
 
+<a name="authors"></a>
+## ✍️ Authors
+
+<a name="contributing"></a>
 ## 🤜🤛 Contributing
 Contributions, issues and feature requests are welcome!
 
+<a name="license"></a>
 ## 📄 License
 Single page application starter is licensed under the [GNU General Public License v3.0](LICENSE).
