@@ -117,7 +117,9 @@ make help
 
 <a name="constant-per-environment"></a>
 ## ⚙️ Constant per environment
-To define a constant that can change based on your environment simply edit `package.json` to add the constant name and its default value (usually for dev environment):
+Follow these steps if you want to define a constant that can change based on Webpack environment.
+
+**Step 1:** Set the constant name and default value in `package.json` (usually for development environment):
 
 ```json
 "configuration": {
@@ -127,7 +129,7 @@ To define a constant that can change based on your environment simply edit `pack
 }
 ```
 
-Then you can override it per environment by editing the related `webpack/[env].js` file:
+**Step 2:** Override the constant by editing the related `webpack/[env].js` file:
 
 ```js
 utils.definePlugin({
@@ -135,7 +137,7 @@ utils.definePlugin({
 })
 ```
 
-Now you can use this constant in every JavaScript file inside `src/` and it will changed depending on your Webpack environment.
+**Now you can use this constant in every .vue/.js file inside `src`** and it will change depending on Webpack environment.
 
 <a name="cache-busting"></a>
 ## 🍱 Cache busting
