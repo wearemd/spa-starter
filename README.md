@@ -137,7 +137,7 @@ utils.definePlugin({
 })
 ```
 
-**Now you can use this constant in every .vue/.js file inside `src`** and it will change depending on Webpack environment.
+**Now you can use this constant in every `.vue`/`.js` file inside `src`** and it will change depending on Webpack environment.
 
 <a name="cache-busting"></a>
 ## 🍱 Cache busting
