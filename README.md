@@ -1,20 +1,26 @@
-<h1 align="center">Single page application starter</h1>
-<p align="center"><strong>Single page application starter</strong> is a starter template for single page applications (SPA).</p>
+<p align="center">
+  <img width="600px" src="README-header.gif" alt="">
+</p>
+<p align="center">
+  <strong>Single page application starter</strong> is a starter template for single page applications (SPA).
+  <br>
+  <b>Stack:</b>
+  <b><a href="https://babeljs.io">Babel</a></b>,
+  <b><a href="https://jgthms.com/minireset.css/">minireset.css</a></b>,
+  <b><a href="https://pugjs.org">Pug</a></b>,
+  <b><a href="https://sass-lang.com">Sass</a></b>,
+  <b><a href="https://vuejs.org">Vue.js</a></b>,
+  <b><a href="https://router.vuejs.org">Vue Router</a></b>,
+  <b><a href="https://webpack.js.org">Webpack</a></b>.
+</p>
+
+- - -
 
 ## ⚙️ Prerequisites
 - [**asdf**](https://github.com/asdf-vm/asdf)
 - [**Make**](https://www.gnu.org/software/make/)
 - [**Node.js**](https://nodejs.org)
 - [**Yarn**](https://yarnpkg.com)
-
-## 🥞 Stack
-- [**Babel**](https://babeljs.io)
-- [**minireset.css**](https://jgthms.com/minireset.css/)
-- [**Pug**](https://pugjs.org)
-- [**Sass**](https://sass-lang.com)
-- [**Vue.js**](https://vuejs.org) 
-- [**Vue Router**](https://router.vuejs.org) 
-- [**Webpack**](https://webpack.js.org)
 
 ## ⌨️ Commands
 ### Serve
@@ -89,6 +95,7 @@ make help
 ├── LICENSE                        # License
 ├── Makefile                       # Commands for this project
 ├── package.json                   # JavaScript dependencies, used by Yarn
+├── README-header.gif              # README header image
 ├── README.md                      # Project documentation
 └── yarn.lock                      # Tracking exact versions for JavaScript dependencies, used by Yarn
 ```
