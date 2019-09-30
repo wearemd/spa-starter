@@ -10,7 +10,7 @@ node_modules: package.json yarn.lock
 
 .DEFAULT_GOAL := serve
 .PHONY: serve
-serve: deps ## Serve site at localhost:3000 with hot reloading
+serve: deps ## Serve site at http://localhost:3000 with hot reloading
 	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
 
 .PHONY: build
