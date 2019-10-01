@@ -9,17 +9,49 @@ node_modules: package.json yarn.lock
 	@touch $@
 
 .DEFAULT_GOAL := serve
+## Serve site at http://localhost:3000 with hot reloading
 .PHONY: serve
-serve: deps ## Serve site at http://localhost:3000 with hot reloading
+serve: deps
 	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
 
+## Build site for production use
 .PHONY: build
-build: deps ## Build site for production use
+build: deps
 	@echo "Building front-end"
 	@rm -rf site/*
 	@NODE_ENV=production $(WEBPACK) --config webpack/prod.js
 	@echo "Front-end built!"
 
+define green-bold
+\033[38;2;166;204;112;1m$(1)\033[0m
+endef
+
+define orange
+\033[38;2;255;204;102m$(1)\033[0m\n
+endef
+
+## List available commands
 .PHONY: help
-help: ## List available commands
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+help:
+	@printf "$(call green-bold,spa-starter) $(shell git describe --tags --abbrev=0)\n"
+	@printf "A starter template for single page applications (SPA) using Make\n\n"
+	@printf "$(call orange,USAGE)"
+	@printf "    make <SUBCOMMAND>\n\n"
+	@printf "$(call orange,SUBCOMMANDS)"
+	@awk '{ \
+		if ($$0 ~ /^.PHONY: [a-zA-Z\-\_0-9]+$$/) { \
+			helpCommand = substr($$0, index($$0, ":") + 2); \
+			if (helpMessage) { \
+				printf "    $(call green-bold,%-8s)%s\n", \
+					helpCommand, helpMessage; \
+				helpMessage = ""; \
+			} \
+		} else if ($$0 ~ /^##/) { \
+			if (helpMessage) { \
+				helpMessage = helpMessage "\n            " substr($$0, 3); \
+			} else { \
+				helpMessage = substr($$0, 3); \
+			} \
+		} \
+	}' \
+	$(MAKEFILE_LIST)
