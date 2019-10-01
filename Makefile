@@ -22,27 +22,27 @@ build: deps
 	@NODE_ENV=production $(WEBPACK) --config webpack/prod.js
 	@echo "Front-end built!"
 
-define green-bold
+define primary
 \033[38;2;166;204;112;1m$(1)\033[0m
 endef
 
-define orange
+define title
 \033[38;2;255;204;102m$(1)\033[0m\n
 endef
 
 ## List available commands
 .PHONY: help
 help:
-	@printf "$(call green-bold,spa-starter) $(shell git describe --tags --abbrev=0)\n"
+	@printf "$(call primary,spa-starter) $(shell git describe --tags --abbrev=0)\n"
 	@printf "A starter template for single page applications (SPA) using Make\n\n"
-	@printf "$(call orange,USAGE)"
+	@printf "$(call title,USAGE)"
 	@printf "    make <SUBCOMMAND>\n\n"
-	@printf "$(call orange,SUBCOMMANDS)"
+	@printf "$(call title,SUBCOMMANDS)"
 	@awk '{ \
 		if ($$0 ~ /^.PHONY: [a-zA-Z\-\_0-9]+$$/) { \
 			helpCommand = substr($$0, index($$0, ":") + 2); \
 			if (helpMessage) { \
-				printf "    $(call green-bold,%-8s)%s\n", \
+				printf "    $(call primary,%-8s)%s\n", \
 					helpCommand, helpMessage; \
 				helpMessage = ""; \
 			} \
