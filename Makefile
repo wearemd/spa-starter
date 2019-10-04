@@ -33,7 +33,7 @@ endef
 ## List available commands
 .PHONY: help
 help:
-	@printf "$(call primary,spa-starter) $(shell git describe --tags --abbrev=0)\n"
+	@printf "$(call primary,spa-starter)\n"
 	@printf "A starter template for single page applications (SPA) using Make\n\n"
 	@printf "$(call title,USAGE)"
 	@printf "    make <SUBCOMMAND>\n\n"
