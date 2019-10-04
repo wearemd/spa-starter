@@ -39,6 +39,17 @@ help:
 	@printf "    make <SUBCOMMAND>\n\n"
 	@printf "$(call title,SUBCOMMANDS)"
 	@awk '{ \
+		line = $$0; \
+		while((n = index(line, "http")) > 0) { \
+			if (match(line, "https?://[^ ]+")) { \
+			  url = substr(line, RSTART, RLENGTH); \
+			  sub(url, "\033[38;2;119;168;217m"url"\033[0m", $$0);  \
+			  line = substr(line, n + RLENGTH); \
+			} else {\
+				break; \
+			} \
+		}\
+		\
 		if ($$0 ~ /^.PHONY: [a-zA-Z\-\_0-9]+$$/) { \
 			helpCommand = substr($$0, index($$0, ":") + 2); \
 			if (helpMessage) { \
