@@ -154,4 +154,4 @@ Our strategy for cache busting is to automatically append a `.[generated-hash]` 
 
 <a name="license"></a>
 ## 📄 License
-Single page application starter is licensed under the [GNU General Public License v3.0](LICENSE).
+**Single page application starter** is licensed under the [GNU General Public License v3.0](LICENSE).
