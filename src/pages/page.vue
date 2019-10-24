@@ -2,7 +2,7 @@
   section
     h1 Page
     p This is a paragraph.
-    img(src="images/unicorn.jpg", alt="")
+    img(src="./images/unicorn.jpg", alt="")
 </template>
 
 <script>

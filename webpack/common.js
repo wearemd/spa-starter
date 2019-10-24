@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
@@ -16,6 +15,28 @@ module.exports = {
         test: /\.(js)$/,
         exclude: /(node_modules)/,
         loader: "babel-loader"
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[contenthash].[ext]',
+            context: path.resolve(__dirname, "../assets/images"),
+            outputPath: 'images'
+          }
+        }
+      },
+      {
+        test: /\.(woff|woff2|ttf)(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[contenthash].[ext]',
+            context: path.resolve(__dirname, "../assets/fonts"),
+            outputPath: 'fonts'
+          }
+        }
       },
       {
         test: /\.(vue)$/,
@@ -34,20 +55,15 @@ module.exports = {
       filename: "index.html",
       template: "src/index.html",
       inject: true
-    }),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, "../assets"),
-        to: path.resolve(__dirname, "../site"),
-        ignore: [".*"]
-      }
-    ])
+    })
   ],
   resolve: {
     extensions: [".js", ".vue", ".json"],
     alias: {
       vue$: "vue/dist/vue.esm.js",
-      "@": path.resolve(__dirname, "../src")
+      "@": path.resolve(__dirname, "../src"),
+      "./fonts": path.resolve(__dirname, "../assets/fonts"),
+      "./images": path.resolve(__dirname, "../assets/images")
     }
   },
   node: {
