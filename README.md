@@ -68,7 +68,7 @@ make help
 .
 ├── assets                   # ASSETS
 │   ├── fonts                # Font assets
-│   │   └── roboto           # Roboto from Google Fonts (TTF, WOFF, WOFF)
+│   │   └── roboto           # Roboto from Google Fonts (TTF, WOFF, WOFF2)
 │   │
 │   └── images               # Image assets
 │       └── unicorn.jpg      # Sample image
