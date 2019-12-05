@@ -68,7 +68,7 @@ make help
 .
 ├── assets                   # ASSETS
 │   ├── fonts                # Font assets
-│   │   └── .gitkeep         # Tracking an empty directory within Git
+│   │   └── roboto           # Roboto from Google Fonts (TTF, WOFF, WOFF)
 │   │
 │   └── images               # Image assets
 │       └── unicorn.jpg      # Sample image
@@ -77,6 +77,10 @@ make help
 ├── sass                     # SASS STYLE
 │   ├── dev                  # WIP style for development
 │   │   └── shame.sass       # WIP style or dirty hacks
+│   │
+│   ├── fonts                # Fonts style
+│   │   ├── _all.sass        # File used to import all fonts-related style
+│   │   └── roboto.sass      # @font-face style for Roboto
 │   │
 │   └── utilities            # Utilities
 │       ├── mixins.sass      # Mixins available in all .vue and .sass files
