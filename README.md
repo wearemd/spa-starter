@@ -20,6 +20,7 @@
 - [**Prerequisites**](#prerequisites)
 - [**Commands**](#commands)
 - [**Project structure**](#project-structure)
+- [**Layout structure**](#layout-structure)
 - [**Constant per environment**](#constant-per-environment)
 - [**Cache busting**](#cache-busting)
 - [**Authors**](#authors)
@@ -76,12 +77,21 @@ make help
 │
 │
 ├── sass                     # SASS STYLE
-│   ├── dev                  # WIP style for development
-│   │   └── shame.sass       # WIP style or dirty hacks
+│   ├── base                 # Base style
+│   │   ├── _all.sass        # Importing all stylesheets
+│   │   └── generic.sass     # Style for generic elements (html, body, etc.)
+│   │
+│   ├── dev                  # Development utilities
+│   │   ├── shame.sass       # WIP style or dirty hacks
+│   │   └── structure.sass   # Highlighting site structure (import commented by default)
 │   │
 │   ├── fonts                # Fonts style
-│   │   ├── _all.sass        # File used to import all fonts-related style
+│   │   ├── _all.sass        # Importing all stylesheets
 │   │   └── roboto.sass      # @font-face style for Roboto
+│   │
+│   ├── layout               # Layout style
+│   │   ├── _all.sass        # Importing all stylesheets
+│   │   └── layout.sass      # Very light starter style for structure elements and titles
 │   │
 │   └── utilities            # Utilities
 │       ├── mixins.sass      # Mixins available in all .vue and .sass files
@@ -119,6 +129,32 @@ make help
 ├── README.md                # Project documentation
 └── yarn.lock                # Tracking exact versions for JavaScript dependencies, used by Yarn
 ```
+
+<a name="layout-structure"></a>
+## 🖥 Layout structure
+The starter comes with a simple layout, structured like the following:
+```pug
+// Wrapper
+.wrapper
+  // Header
+  header.header
+    .container
+      …
+
+  // Main
+  main.main
+    // Section (repeatable)
+    section.section
+      .container
+        …
+
+  // Footer
+  footer.footer
+    .container
+      …
+```
+
+There is also a **Sass utility allowing to highlight the site structure** (pretty useful in development). Simply uncomment [`@import "dev/structure.sass"` in `app.vue`](src/app.vue#L56) if you want to use it.
 
 <a name="constant-per-environment"></a>
 ## ⚙️ Constant per environment
