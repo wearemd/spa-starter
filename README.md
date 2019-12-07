@@ -71,6 +71,7 @@ make help
 │   │   └── roboto           # Roboto from Google Fonts (TTF, WOFF, WOFF2)
 │   │
 │   └── images               # Image assets
+│       ├── favicon.ico      # Favicon (placeholder by default)
 │       └── unicorn.jpg      # Sample image
 │
 │
