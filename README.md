@@ -2,7 +2,7 @@
   <img width="600px" src="README-header.gif" alt="">
 </p>
 <p align="center">
-  <strong>Single page application starter</strong> is a starter template for single page applications (SPA).
+  <strong>SPA starter</strong> is a starter template for single page applications.
   <br>
   <b>Stack:</b>
   <b><a href="https://babeljs.io">Babel</a></b>,
@@ -159,4 +159,4 @@ Our strategy for cache busting is to automatically append a `.[generated-hash]` 
 
 <a name="license"></a>
 ## 📄 License
-**Single page application starter** is licensed under the [GNU General Public License v3.0](LICENSE).
+**SPA starter** is licensed under the [GNU General Public License v3.0](LICENSE).
