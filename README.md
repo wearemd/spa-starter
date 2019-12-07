@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="600px" src="README-header.gif" alt="">
+  <img width="600px" src="documentation-images/README-header.gif" alt="">
 </p>
 <p align="center">
   <strong>SPA starter</strong> is a starter template for single page applications.
