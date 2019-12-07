@@ -132,9 +132,7 @@ make help
 
 <a name="layout-structure"></a>
 ## 🖥 Layout structure
-<p align="center">
-  <img width="600px" src="documentation-images/layout-structure.jpg" alt="">
-</p>
+![](documentation-images/layout-structure.jpg)
 
 The starter comes with a simple layout, structured like the following:
 ```pug
@@ -159,9 +157,7 @@ The starter comes with a simple layout, structured like the following:
 ```
 
 ### Highlighting site structure
-<p align="center">
-  <img width="600px" src="documentation-images/layout-structure-highlighted.jpg" alt="">
-</p>
+![](documentation-images/layout-structure-highlighted.jpg)
 
 There is also a **Sass utility allowing to highlight the site structure** (pretty useful in development). Simply uncomment [`@import "dev/structure.sass"` in `app.vue`](src/app.vue#L56) if you want to use it.
 
