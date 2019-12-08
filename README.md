@@ -82,7 +82,8 @@ make help
 ├── sass                     # SASS STYLE
 │   ├── base                 # Base style
 │   │   ├── _all.sass        # Importing all stylesheets
-│   │   └── generic.sass     # Style for generic elements (html, body, etc.)
+│   │   ├── generic.sass     # Style for generic elements (html, body, etc.)
+│   │   └── helpers.sass     # Helper classes (modifiers)
 │   │
 │   ├── dev                  # Development utilities
 │   │   ├── shame.sass       # WIP style or dirty hacks
