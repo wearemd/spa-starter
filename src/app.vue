@@ -13,6 +13,7 @@
 
           p {{some_const}}
 
+    //- Main
     transition(name="fade" mode="out-in")
       router-view
 
