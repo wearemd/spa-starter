@@ -1,3 +1,11 @@
+// Add hover styles only to non-touch devices
+// (See https://medium.com/@ferie/detect-a-touch-device-with-only-css-9f8e30fa1134)
+// (See also https://craigmdennis.com/articles/add-hover-styles-for-non-touch-devices-with-sass/)
+=hover
+  @media (hover: hover)
+    &:hover
+      @content
+
 // From Bulma bulma.io
 =overlay($offset: 0)
   bottom: $offset
