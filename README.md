@@ -162,7 +162,7 @@ The starter comes with a simple layout, structured like the following:
 ### Highlighting site structure
 ![](documentation-images/layout-structure-highlighted.jpg)
 
-There is also a **Sass utility allowing to highlight the site structure** (pretty useful in development). Simply uncomment [`@import "dev/structure.sass"` in `app.vue`](src/app.vue#L56) if you want to use it.
+There is also a **Sass utility allowing to highlight the site structure** (pretty useful in development). Simply uncomment [`@import "dev/structure.sass"` in `app.vue`](src/app.vue#L57) if you want to use it.
 
 <a name="constant-per-environment"></a>
 ## ⚙️ Constant per environment
