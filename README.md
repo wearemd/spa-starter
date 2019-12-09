@@ -98,9 +98,9 @@ make help
 │   │   └── layout.sass      # Very light starter style for structure elements and titles
 │   │
 │   └── utilities            # Utilities
-│       ├── animations.sass  # Animations available in all .vue and .sass files
+│       ├── animations.sass  # Animations (imported in app.vue)
 │       ├── mixins.sass      # Mixins available in all .vue and .sass files
-│       ├── transitions.sass # Vue.js transitions imported in app.vue
+│       ├── transitions.sass # Vue.js transitions (imported in app.vue)
 │       └── variables.sass   # Variables available in all .vue and .sass files
 │
 │
