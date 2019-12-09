@@ -27,7 +27,7 @@
 // -----------------------------------------------------------------------------
 // Libraries
 // -----------------------------------------------------------------------------
-// minireset.css - A tiny modern CSS reset jgthms.com/minireset.css/
+// minireset.css - A tiny modern CSS reset https://jgthms.com/minireset.css/
 @import "minireset.css/minireset.sass"
 
 // -----------------------------------------------------------------------------
