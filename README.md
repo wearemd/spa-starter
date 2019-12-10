@@ -98,10 +98,10 @@ make help
 │   │   └── layout.sass      # Very light starter style for structure elements and titles
 │   │
 │   └── utilities            # Utilities
-│       ├── animations.sass  # Animations (imported in app.vue)
-│       ├── mixins.sass      # Mixins available in all .vue and .sass files
+│       ├── animations.sass  # Some basic animations
+│       ├── mixins.sass      # A few useful mixins (available in all .vue and .sass files)
 │       ├── transitions.sass # Vue.js transitions (imported in app.vue)
-│       └── variables.sass   # Variables available in all .vue and .sass files
+│       └── variables.sass   # Variables (available in all .vue and .sass files)
 │
 │
 ├── src                      # VUE.JS/JAVASCRIPT SOURCE FILES
