@@ -170,7 +170,7 @@ There is also a **Sass utility allowing to highlight the site structure** (prett
 ## ⚙️ Constant per environment
 Follow these steps if you want to define a constant that can change based on Webpack environment.
 
-**Step 1:** Set the constant name and default value in `package.json` (usually for development environment):
+**Step 1:** Declare the constant in `package.json` (usually for development environment):
 
 ```json
 "configuration": {
