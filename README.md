@@ -101,7 +101,7 @@ make help
 │       ├── animations.sass  # Some basic animations
 │       ├── mixins.sass      # A few useful mixins (available in all .vue and .sass files)
 │       ├── transitions.sass # Vue.js transitions (imported in app.vue)
-│       └── variables.sass   # Variables (available in all .vue and .sass files)
+│       └── variables.sass   # Variables for colors, typography, etc. (available in all .vue and .sass files)
 │
 │
 ├── src                      # VUE.JS/JAVASCRIPT SOURCE FILES
