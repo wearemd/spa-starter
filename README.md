@@ -68,61 +68,61 @@ make help
 ```
 .
 ├── assets                   # ASSETS
-│   ├── fonts                # Font assets
-│   │   └── roboto           # Roboto from Google Fonts (TTF, WOFF, WOFF2)
-│   │
-│   └── images               # Image assets
-│       ├── favicon.ico      # Favicon (placeholder by default)
-│       └── unicorn.jpg      # Sample image
+│   ├── fonts                # Font assets
+│   │   └── roboto           # Roboto from Google Fonts (TTF, WOFF, WOFF2)
+│   │
+│   └── images               # Image assets
+│       ├── favicon.ico      # Favicon (placeholder by default)
+│       └── unicorn.jpg      # Sample image
 │
 │
 ├── documentation-images     # PROJECT DOCUMENTATION IMAGES
 │
 │
 ├── sass                     # SASS STYLE
-│   ├── base                 # Base style
-│   │   ├── _all.sass        # Importing all stylesheets
-│   │   ├── generic.sass     # Style for generic elements (html, body, etc.)
-│   │   └── helpers.sass     # Helper classes (modifiers)
-│   │
-│   ├── dev                  # Development utilities
-│   │   ├── shame.sass       # WIP style or dirty hacks
-│   │   └── structure.sass   # Highlighting site structure (import commented by default)
-│   │
-│   ├── fonts                # Fonts style
-│   │   ├── _all.sass        # Importing all stylesheets
-│   │   └── roboto.sass      # @font-face style for Roboto
-│   │
-│   ├── layout               # Layout style
-│   │   ├── _all.sass        # Importing all stylesheets
-│   │   └── layout.sass      # Very light starter style for structure elements and titles
-│   │
-│   └── utilities            # Utilities
-│       ├── animations.sass  # Some basic animations
-│       ├── mixins.sass      # A few useful mixins (available in all .vue and .sass files)
-│       ├── transitions.sass # Vue.js transitions (imported in app.vue)
-│       └── variables.sass   # Variables for colors, typography, etc. (available in all .vue
+│   ├── base                 # Base style
+│   │   ├── _all.sass        # Importing all stylesheets
+│   │   ├── generic.sass     # Style for generic elements (html, body, etc.)
+│   │   └── helpers.sass     # Helper classes (modifiers)
+│   │
+│   ├── dev                  # Development utilities
+│   │   ├── shame.sass       # WIP style or dirty hacks
+│   │   └── structure.sass   # Highlighting site structure (import commented by default)
+│   │
+│   ├── fonts                # Fonts style
+│   │   ├── _all.sass        # Importing all stylesheets
+│   │   └── roboto.sass      # @font-face style for Roboto
+│   │
+│   ├── layout               # Layout style
+│   │   ├── _all.sass        # Importing all stylesheets
+│   │   └── layout.sass      # Very light starter style for structure elements and titles
+│   │
+│   └── utilities            # Utilities
+│       ├── animations.sass  # Some basic animations
+│       ├── mixins.sass      # A few useful mixins (available in all .vue and .sass files)
+│       ├── transitions.sass # Vue.js transitions (imported in app.vue)
+│       └── variables.sass   # Variables for colors, typography, etc. (available in all .vue
 |                            # and .sass files)
 │
 │
 ├── src                      # VUE.JS/JAVASCRIPT SOURCE FILES
-│   ├── pages                # Pages
-│   │   ├── index.vue        # Home page
-│   │   └── page.vue         # Sample page
-│   │
-│   ├── router               # Router
-│   │   └── index.js         # Vue.js router configuration and initialization
-│   │
-│   ├── app.js               # Vue.js application configuration and initialization
-│   ├── app.vue              # Main Vue.js component
-│   └── index.html           # HTML index used to render the website
+│   ├── pages                # Pages
+│   │   ├── index.vue        # Home page
+│   │   └── page.vue         # Sample page
+│   │
+│   ├── router               # Router
+│   │   └── index.js         # Vue.js router configuration and initialization
+│   │
+│   ├── app.js               # Vue.js application configuration and initialization
+│   ├── app.vue              # Main Vue.js component
+│   └── index.html           # HTML index used to render the website
 │
 │
 ├── webpack                  # WEBPACK CONFIGURATION PER ENVIRONMENT AND UTILITIES
-│   ├── common.js            # Shared between development and production environments
-│   ├── dev.js               # Development environment
-│   ├── prod.js              # Production environment
-│   └── utils.js             # Utilities to create a new environment easily
+│   ├── common.js            # Shared between development and production environments
+│   ├── dev.js               # Development environment
+│   ├── prod.js              # Production environment
+│   └── utils.js             # Utilities to create a new environment easily
 │
 │
 ├── .babelrc                 # Presets and plugins to use, used by Babel
