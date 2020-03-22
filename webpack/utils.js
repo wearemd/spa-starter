@@ -8,11 +8,13 @@ exports.sassLoader = function() {
   return {
     loader: "sass-loader",
     options: {
-      indentedSyntax: true,
-      includePaths: [
-        path.resolve(__dirname, "../sass"),
-        path.resolve(__dirname, "../node_modules")
-      ]
+      sassOptions: {
+        indentedSyntax: true,
+        includePaths: [
+          path.resolve(__dirname, "../sass"),
+          path.resolve(__dirname, "../node_modules")
+        ]
+      }
     }
   };
 };
