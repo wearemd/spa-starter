@@ -6478,10 +6478,10 @@ sass-loader@8.0.2:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
-sass-resources-loader@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.0.2.tgz#66440c0d2c3ab4b97a71df94eaa81766b5d05a1e"
-  integrity sha512-I2k6D7wF/EGgylehINvhSfxjTsWLdU0k9Q5n6TMne9gHVb3xWS2A9RX34eGrcilFOULf0vBMI/oJpPMHgP0QOQ==
+sass-resources-loader@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.0.3.tgz#585636b357d9c27d02fa359c175fafe3e3d66ce4"
+  integrity sha512-kYujKXFPZvh5QUT+0DO35P93G6GeIRMP4c941Ilbvey5lo+iICFs2H4hP2CFHl68Llg7h2iXqe0RQpDoUzjUSw==
   dependencies:
     "@babel/cli" "^7.4.4"
     "@babel/preset-env" "^7.4.5"
