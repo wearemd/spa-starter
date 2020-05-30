@@ -16,7 +16,7 @@
     "vue-router": "^3.0.6"
   },
   "devDependencies": {
-    "@babel/core": "7.10.1",
+    "@babel/core": "7.10.2",
     "@babel/plugin-proposal-class-properties": "7.10.1",
     "@babel/plugin-proposal-decorators": "7.10.1",
     "@babel/plugin-proposal-export-namespace-from": "7.10.1",
@@ -28,8 +28,8 @@
     "@babel/plugin-syntax-import-meta": "7.10.1",
     "@babel/plugin-syntax-jsx": "7.10.1",
     "@babel/plugin-transform-runtime": "7.10.1",
-    "@babel/preset-env": "7.10.1",
-    "@babel/runtime": "7.10.1",
+    "@babel/preset-env": "7.10.2",
+    "@babel/runtime": "7.10.2",
     "babel-helper-vue-jsx-merge-props": "2.0.3",
     "babel-loader": "8.1.0",
     "babel-plugin-transform-vue-jsx": "4.0.1",
