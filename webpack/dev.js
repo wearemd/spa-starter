@@ -1,4 +1,4 @@
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const common = require("./common.js");
 const webpack = require("webpack");
 const FriendlyErrorsPlugin = require("friendly-errors-webpack-plugin");
