@@ -4,6 +4,15 @@ const webpack = require("webpack");
 const configuration = require(path.resolve(__dirname, "../package.json"))
   .configuration;
 
+exports.cssLoader = function() {
+  return {
+    loader: "css-loader",
+    options: {
+        esModule: false
+    }
+  };
+};
+
 exports.sassLoader = function() {
   return {
     loader: "sass-loader",
