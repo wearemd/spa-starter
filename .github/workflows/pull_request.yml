@@ -1,0 +1,54 @@
+name: Pull Request
+on: [pull_request]
+
+jobs:
+  compile-and-auto-approve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1.0.0
+
+      - name: asdf setup
+        uses: asdf-vm/actions/setup@v1.0.0
+
+      - name: Cache asdf dependencies
+        id: cache-asdf
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-asdf-dependencies
+        with:
+          path: ~/.asdf
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('.tool_versions') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-name }}-
+            ${{ runner.os }}-
+
+      - name: set env
+        run: |
+          echo "::set-env name=NODEJS_CHECK_SIGNATURES::no"
+
+      - name: asdf install
+        if: steps.cache-asdf.outputs.cache-hit != 'true'
+        uses: asdf-vm/actions/install@v1.0.0
+
+      - name: Cache yarn cache directory
+        id: yarn
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-yarn-cache
+        with:
+          path: $(yarn cache dir)
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-name }}-
+            ${{ runner.os }}-
+
+      - name: Build
+        run: |
+          make build
+
+      - name: Approve pull request
+        uses: hmarr/auto-approve-action@v2.0.0
+        if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]' || github.action == 'renovate[bot]'
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
