@@ -39,7 +39,7 @@
     "html-webpack-plugin": "4.4.0",
     "mini-css-extract-plugin": "0.11.0",
     "node-sass": "4.14.1",
-    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
     "prettier": "2.1.1",
     "pug": "3.0.0",
     "pug-plain-loader": "1.0.0",
