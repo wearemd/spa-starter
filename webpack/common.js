@@ -23,7 +23,8 @@ module.exports = {
           options: {
             name: '[path][name].[contenthash].[ext]',
             context: path.resolve(__dirname, "../assets/images"),
-            outputPath: 'images'
+            outputPath: 'images',
+            esModule: false
           }
         }
       },
