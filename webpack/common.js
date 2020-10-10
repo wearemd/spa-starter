@@ -35,7 +35,8 @@ module.exports = {
           options: {
             name: '[path][name].[contenthash].[ext]',
             context: path.resolve(__dirname, "../assets/fonts"),
-            outputPath: 'fonts'
+            outputPath: 'fonts',
+            publicPath: url => '../fonts/' + url
           }
         }
       },
