@@ -1,5 +1,5 @@
 WEBPACK        := $(PWD)/node_modules/.bin/webpack
-WEBPACK_SERVER := $(PWD)/node_modules/.bin/webpack-dev-server
+WEBPACK_SERVER := $(PWD)/node_modules/.bin/webpack serve
 
 .PHONY: deps
 deps: node_modules
