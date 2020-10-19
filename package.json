@@ -33,7 +33,7 @@
     "babel-helper-vue-jsx-merge-props": "2.0.3",
     "babel-loader": "8.1.0",
     "babel-plugin-transform-vue-jsx": "4.0.1",
-    "css-loader": "4.3.0",
+    "css-loader": "5.0.0",
     "file-loader": "6.1.1",
     "friendly-errors-webpack-plugin": "1.7.0",
     "html-webpack-plugin": "4.5.0",
