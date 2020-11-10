@@ -31,7 +31,7 @@
     "@babel/preset-env": "7.12.1",
     "@babel/runtime": "7.12.5",
     "babel-helper-vue-jsx-merge-props": "2.0.3",
-    "babel-loader": "8.2.0",
+    "babel-loader": "8.2.1",
     "babel-plugin-transform-vue-jsx": "4.0.1",
     "css-loader": "5.0.1",
     "file-loader": "6.2.0",
