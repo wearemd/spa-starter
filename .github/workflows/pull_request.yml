@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v1.0.0
 
       - name: asdf setup
-        uses: asdf-vm/actions/setup@v1.0.0
+        uses: asdf-vm/actions/setup@v1.0.1
 
       - name: Cache asdf dependencies
         id: cache-asdf
@@ -25,7 +25,7 @@ jobs:
 
       - name: set env
         run: |
-          echo "::set-env name=NODEJS_CHECK_SIGNATURES::no"
+          echo "NODEJS_CHECK_SIGNATURES=no" >> $GITHUB_ENV
 
       - name: asdf install
         if: steps.cache-asdf.outputs.cache-hit != 'true'
