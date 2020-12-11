@@ -7,7 +7,8 @@ module.exports = {
   entry: ["./src/app.js"],
   output: {
     filename: "js/app.js",
-    path: path.resolve(__dirname, "../site")
+    path: path.resolve(__dirname, "../site"),
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -66,18 +67,9 @@ module.exports = {
       "@": path.resolve(__dirname, "../src"),
       "./fonts": path.resolve(__dirname, "../assets/fonts"),
       "./images": path.resolve(__dirname, "../assets/images")
+    },
+    fallback: {
+      fs: false
     }
-  },
-  node: {
-    // prevent webpack from injecting useless setImmediate polyfill because Vue
-    // source contains it (although only uses it if it's native).
-    setImmediate: false,
-    // prevent webpack from injecting mocks to Node native modules
-    // that does not make sense for the client
-    dgram: "empty",
-    fs: "empty",
-    net: "empty",
-    tls: "empty",
-    child_process: "empty"
   }
 };
