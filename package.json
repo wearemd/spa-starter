@@ -44,7 +44,7 @@
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
     "sass-loader": "11.0.1",
-    "sass-resources-loader": "2.1.1",
+    "sass-resources-loader": "2.2.1",
     "terser-webpack-plugin": "5.1.1",
     "vue-loader": "15.9.6",
     "vue-template-compiler": "2.6.12",
