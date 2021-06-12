@@ -38,7 +38,7 @@
     "friendly-errors-webpack-plugin": "1.7.0",
     "html-webpack-plugin": "5.3.1",
     "mini-css-extract-plugin": "1.6.0",
-    "node-sass": "5.0.0",
+    "node-sass": "6.0.0",
     "optimize-css-assets-webpack-plugin": "5.0.6",
     "prettier": "2.3.1",
     "pug": "3.0.2",
