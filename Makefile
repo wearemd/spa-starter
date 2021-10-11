@@ -12,7 +12,7 @@ node_modules: package.json yarn.lock
 ## Serve site at http://localhost:3000 with hot reloading
 .PHONY: serve
 serve: deps
-	@$(WEBPACK_SERVER) --inline --progress --config webpack/dev.js
+	@$(WEBPACK_SERVER) --config webpack/dev.js
 
 ## Build site for production use
 .PHONY: build
