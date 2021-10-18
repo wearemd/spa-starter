@@ -1332,7 +1332,7 @@ esbuild-linux-ppc64le@0.13.8:
   resolved "https://registry.yarnpkg.com/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.13.8.tgz#fdb82a059a5b86bb10fb42091b4ebcf488b9cd46"
   integrity sha512-eZSQ0ERsWkukJp2px/UWJHVNuy0lMoz/HZcRWAbB6reoaBw7S9vMzYNUnflfL3XA6WDs+dZn3ekHE4Y2uWLGig==
 
-esbuild-loader@^2.16.0:
+esbuild-loader@2.16.0:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/esbuild-loader/-/esbuild-loader-2.16.0.tgz#a44a57a77ed2810d6b278579271f77d739aa7bc9"
   integrity sha512-LCJEwkf+nMJbNmVYNgg/0PaIZDdr5OcHw1qbWAZLkrmBRX+KwHY/yAS6ia98UBtwzk/WhsftUBNB6tfPHgFIxw==
