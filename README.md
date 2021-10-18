@@ -5,7 +5,7 @@
   <strong>SPA starter</strong> is a starter template for single page applications.
   <br>
   <b>Stack:</b>
-  <b><a href="https://babeljs.io">Babel</a></b>,
+  <b><a href="https://esbuild.github.io/">esbuild</a></b>,
   <b><a href="https://jgthms.com/minireset.css/">minireset.css</a></b>,
   <b><a href="https://pugjs.org">Pug</a></b>,
   <b><a href="https://sass-lang.com">Sass</a></b>,
@@ -125,7 +125,6 @@ make help
 │   └── utils.js             # Utilities to create a new environment easily
 │
 │
-├── .babelrc                 # Presets and plugins to use, used by Babel
 ├── .gitignore               # Files and folders ignored by Git
 ├── .tool-versions           # Which version to use locally for each language, used by asdf
 ├── LICENSE                  # License
