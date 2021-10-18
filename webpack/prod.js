@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const common = require("./common.js");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserPlugin = require('terser-webpack-plugin');
+const { ESBuildMinifyPlugin } = require('esbuild-loader')
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const utils = require("./utils");
 
@@ -36,8 +36,8 @@ module.exports = merge(common, {
     },
     minimize: true,
     minimizer: [
-      new TerserPlugin({
-        parallel: true
+      new ESBuildMinifyPlugin({
+        target: 'es2015'
       }),
       new OptimizeCSSAssetsPlugin({})
     ]
