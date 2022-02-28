@@ -13,7 +13,7 @@
   "dependencies": {
     "minireset.css": "^0.0.7",
     "vue": "2.6.14",
-    "vue-router": "^3.5.1"
+    "vue-router": "^4.0.0"
   },
   "devDependencies": {
     "css-loader": "6.6.0",
