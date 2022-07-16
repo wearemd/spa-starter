@@ -35,6 +35,6 @@ module.exports = merge(common, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    utils.definePlugin()
+    utils.definePlugin({__VUE_PROD_DEVTOOLS__: true})
   ]
 });
