@@ -1,26 +1,27 @@
 <template lang="pug">
-  // Wrapper
-  .wrapper
-    // Header
-    header.header
-      .container
-        nav
-          ul
-            li
-              router-link(:to="{name: 'Home'}") Home
-            li
-              router-link(:to="{name: 'Page'}") Page
+//- Wrapper
+.wrapper
+  //- Header
+  header.header
+    .container
+      nav
+        ul
+          li
+            router-link(:to="{name: 'Home'}") Home
+          li
+            router-link(:to="{name: 'Page'}") Page
 
-          p {{some_const}}
+        p {{some_const}}
 
-    //- Main
+  //- Main
+  router-view(v-slot="{ Component }")
     transition(name="fade" mode="out-in")
-      router-view
+      component(:is="Component")
 
-    // Footer
-    footer.footer
-      .container
-        p Footer information
+  //- Footer
+  footer.footer
+    .container
+      p Footer information
 </template>
 
 <style lang="sass">

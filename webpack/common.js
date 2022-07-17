@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   entry: ["./src/app.js"],
@@ -49,7 +49,17 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loader: "pug-plain-loader"
+        oneOf: [
+          // this applies to `<template lang="pug">` in Vue components
+          {
+            resourceQuery: /^\?vue/,
+            use: ['pug-plain-loader']
+          },
+          // this applies to pug imports inside JavaScript
+          {
+            use: ['raw-loader', 'pug-plain-loader']
+          }
+        ]
       }
     ]
   },
@@ -60,12 +70,15 @@ module.exports = {
       filename: "index.html",
       template: "src/index.html",
       inject: true
+    }),
+    // See https://github.com/vuejs/core/blob/main/packages/vue/README.md#bundler-build-feature-flags
+    new webpack.DefinePlugin({
+      __VUE_OPTIONS_API__: true
     })
   ],
   resolve: {
     extensions: [".js", ".vue", ".json"],
     alias: {
-      vue$: "vue/dist/vue.esm.js",
       "@": path.resolve(__dirname, "../src"),
       "./fonts": path.resolve(__dirname, "../assets/fonts"),
       "./images": path.resolve(__dirname, "../assets/images")
