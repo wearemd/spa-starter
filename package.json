@@ -28,7 +28,7 @@
     "pug-plain-loader": "1.1.0",
     "sass-loader": "12.6.0",
     "sass-resources-loader": "2.2.5",
-    "vue-loader": "17.1.0",
+    "vue-loader": "17.1.1",
     "vue-style-loader": "4.1.3",
     "vue-template-compiler": "2.7.14",
     "webpack": "5.82.1",
