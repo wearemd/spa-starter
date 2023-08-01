@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "css-loader": "6.8.1",
-    "esbuild-loader": "2.21.0",
+    "esbuild-loader": "3.1.0",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.5.3",
     "mini-css-extract-plugin": "2.7.6",
