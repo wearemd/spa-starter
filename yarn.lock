@@ -4580,10 +4580,10 @@ void-elements@^3.1.0:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
   integrity sha1-YU9/v42AHwu18GYfWy9XhXUOTwk=
 
-vue-loader@17.3.1:
-  version "17.3.1"
-  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-17.3.1.tgz#03b80e7f65727894ed6b29c65dd54ad215a40c38"
-  integrity sha512-nmVu7KU8geOyzsStyyaxID/uBGDMS8BkPXb6Lu2SNkMawriIbb+hYrNtgftHMKxOSkjjjTF5OSSwPo3KP59egg==
+vue-loader@17.4.0:
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-17.4.0.tgz#bd1cbbe858c63513e428caa587e9c6f9d848a14d"
+  integrity sha512-tq81JlBNWYvoYAh5PRZXg5bE7BEv0Id6W7BF5otj18MtHgu5OqiK9rQu0z73r+VGlIq0lLDoEeC7RWYynUpXlQ==
   dependencies:
     chalk "^4.1.0"
     hash-sum "^2.0.0"
